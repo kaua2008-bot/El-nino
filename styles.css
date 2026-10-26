@@ -1,6 +1,6 @@
 header{
-    background-color: chocolate;
-    border-radius: 15px;
+    background-color: #0f4c81;
+
     
 }
 
@@ -16,7 +16,6 @@ h2{
     text-align: center;
 
 }
-.icone{
-    color: black;
+#icon{
 
 }
