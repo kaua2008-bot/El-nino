@@ -1,0 +1,22 @@
+header{
+    background-color: chocolate;
+    border-radius: 15px;
+    
+}
+
+h1.sos{
+    font-size: 30px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+h2{
+    text-align: center;
+
+}
+.container img{
+    width: 100%;
+    height: auto;
+}
