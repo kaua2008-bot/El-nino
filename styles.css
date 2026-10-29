@@ -17,8 +17,7 @@ body{
 .buttonhead{
 
     display: flex;
-    text-align: right;
-    gap: 12px;
+    gap: 15px;
     color: aliceblue;
 }
 a{
