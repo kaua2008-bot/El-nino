@@ -11,11 +11,10 @@
 .buttonhead{
 
     display: flex;
-    text-align: right;
-    gap: 12px;
+    gap: 15px;
     color: aliceblue;
 }
 a{
     color: aliceblue;
-    tex
+    font-size: 20px;
 }
