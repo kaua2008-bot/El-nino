@@ -1,5 +1,14 @@
 
 .cabecalho{
+    background-color:#003087;
+
+}
+.button{
+    text-align: center;
+    list-style: none;
+}
+
+.cabecalho{
     display: flex;
     background-color:#003087;
 
