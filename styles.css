@@ -1,3 +1,5 @@
+@import url("paginas_de_estilos/cabecalho.css");
+@import url("paginas_de_estilos/heroSection.css");
 
 .cabecalho{
     display: flex;
