@@ -9,14 +9,14 @@
 .cabecalho{
     display: flex;
     background-color:#003087;
-
 }
-.buttonhead{
 
+.buttonhead{
     display: flex;
     gap: 15px;
-    color: aliceblue;
+    border: 0;
 }
+
 a{
     color: aliceblue;
     font-size: 20px;
