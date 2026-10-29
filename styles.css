@@ -1,21 +1,7 @@
-header{
-    background-color: #0f4c81;
-
-    
-}
-
-h1.sos{
-    font-size: 30px;
-}
-
-h1{
-    font-size: 20px;
-}
-
 h2{
     text-align: center;
-
 }
-#icon{
 
+.cabecalho{
+    background-color: #0f4c81;
 }
