@@ -1,7 +1,9 @@
-h2{
-    text-align: center;
-}
 
 .cabecalho{
-    background-color: #0f4c81;
+    background-color:#003087;
+
+}
+.button{
+    text-align: center;
+    list-style: none;
 }
