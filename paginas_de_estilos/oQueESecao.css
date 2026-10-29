@@ -1,0 +1,23 @@
+.oQueESecao{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%; 
+}
+.itemOQueE{
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+.notificacaoElNinoHome{
+    width: 100px;
+}
+.itemExplicacao{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cria 3 colunas idênticas (1 fração cada) */
+    width: 100%;
+    gap: 10px;   
+}
+.informacaoOQueE{
+    flex: 2;
+    text-align: center;
+}

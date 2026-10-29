@@ -1,5 +1,6 @@
 @import url("paginas_de_estilos/cabecalho.css");
 @import url("paginas_de_estilos/heroSection.css");
+@import url("paginas_de_estilos/oQueESecao.css");
 
 *{
     box-sizing: border-box;
@@ -22,5 +23,4 @@ body{
 }
 a{
     color: aliceblue;
-    tex
 }
