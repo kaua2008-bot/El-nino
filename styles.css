@@ -5,9 +5,13 @@
 
 }
 .buttonhead{
+
     display: flex;
     text-align: right;
-    list-style: none;
     gap: 12px;
     color: aliceblue;
+}
+a{
+    color: aliceblue;
+    tex
 }
