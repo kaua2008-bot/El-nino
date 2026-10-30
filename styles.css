@@ -8,16 +8,76 @@
 }
 body{
     background-color: #DDF3F5;
-}
+}1
 .cabecalho{
     display: flex;
     background-color:#003087;
 }
 
-.buttonhead{
+:root{
+    --cor-primaria-inicio: #003087;
+
+    --cor-primaria-what: #003087;
+    
+    --cor-primaria-previ: #003087;
+
+    --cor-primaria-preven: #003087;
+
+    --cor-primaria-not: #003087;
+
+    --cor-primaria-vid: #003087;
+
+    --cor-primaria-cont: #003087;
+
+    --cor-primaria-login: #003087;
+
+    --cor-primaria-cadast: #ffffff;
+}
+
+.btnhead{
     display: flex;
     gap: 15px;
-    border: 0;
+    border: none;
+    background-color: #003087;
+    text-decoration: none;
+}
+
+
+
+.btn-inicio{
+    background-color: var(--cor-primaria-inicio);
+}
+
+.btn-what{
+    background-color: var(--cor-primaria-what);
+}
+
+.btn-previ{
+    background-color: var(--cor-primaria-previ);
+}
+
+.btn-preven{
+    background-color: var(--cor-primaria-preven);
+}
+
+.btn-not{
+    background-color: var(--cor-primaria-not);
+}
+
+.btn-vid{
+    background-color: var(--cor-primaria-vid);
+}
+
+.btn-cont{
+    background-color: var(--cor-primaria-cont);
+}
+
+.botao-login{
+    background-color: var(--cor-primaria-login);
+}
+
+.botao-cadast{
+    background-color: var(--cor-primaria-cadast);
 }
 
 a{
