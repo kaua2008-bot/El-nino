@@ -2,6 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%; 
+    align-items: center;
 }
 .itemOQueE{
     flex: 1;
@@ -20,4 +21,8 @@
 .informacaoOQueE{
     flex: 2;
     text-align: center;
+}
+
+@media screen {
+    
 }

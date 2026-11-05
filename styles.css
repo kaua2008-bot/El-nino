@@ -16,44 +16,50 @@ body{
     justify-content: space-between;
 }
 
+/* CORES */
 :root{
     --cor-primaria-inicio: #ffffff;
+    --cor-primaria-what: #ffffff;
+    --cor-primaria-previ: #ffffff;
+    --cor-primaria-preven: #ffffff;
+    --cor-primaria-not: #ffffff;
+    --cor-primaria-vid: #ffffff;
+    --cor-primaria-cont: #ffffff;
+    --cor-primaria-login: #DDF3F5;
+    --cor-primaria-cadast: #003087;
+    
     --cor-hover-inicio: #0d3375;
     --cor-secundaria-inicio: #003087;
 
-    --cor-primaria-what: #ffffff;
+
     --cor-hover-what: #0d3375;
     --cor-secundaria-what: #003087;
     
-    --cor-primaria-previ: #ffffff;
+
     --cor-hover-previ: #0d3375;
     --cor-secundaria-previ: #003087;
     
-    --cor-primaria-preven: #ffffff;
     --cor-hover-preven: #0d3375;
     --cor-secundaria-preven: #003087;
 
-    --cor-primaria-not: #ffffff;
+
     --cor-hover-not: #0d3375;
     --cor-secundaria-not: #003087;
     
-    --cor-primaria-vid: #ffffff;
+
     --cor-hover-vid: #0d3375;
     --cor-secundaria-vid: #003087;
 
-    --cor-primaria-cont: #ffffff;
     --cor-hover-cont: #0d3375;
     --cor-secundaria-cont: #003087;
 
-    --cor-primaria-login: #DDF3F5;
+
     --cor-hover-login: #0d3375;
     --cor-secundaria-login: #003087;
 
-    --cor-primaria-cadast: #003087;
     --cor-hover-cadast: #a4d3d3;
     --cor-secundaria-cadast: #ffffff;
 }
-
 .btnhead{
     display: flex;
     gap: 15px;
@@ -61,17 +67,17 @@ body{
     border-radius: 36px;
     padding: 10px;
 }
-
 .botoes{
     display: flex;
     gap: 15px;
     border-radius: 36px;
     padding: 10px;
 }
-
 .lupa{
     background-color: #003087;
     border: none;
+    width: 30px;
+    height: 30px;
 }
 
 /*Início*/
