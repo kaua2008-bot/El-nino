@@ -1,3 +1,5 @@
+/* importes para outras páginas de estilo para facilitar a legibilidade desse css */
+
 @import url("paginas_de_estilos/cabecalho.css");
 @import url("paginas_de_estilos/heroSection.css");
 @import url("paginas_de_estilos/oQueESecao.css");
@@ -18,6 +20,7 @@ body{
 
 /* CORES */
 :root{
+    /* CORES PRIMÁRIAS */
     --cor-primaria-inicio: #ffffff;
     --cor-primaria-what: #ffffff;
     --cor-primaria-previ: #ffffff;
@@ -28,36 +31,26 @@ body{
     --cor-primaria-login: #DDF3F5;
     --cor-primaria-cadast: #003087;
     
+    /* CORES HOVER */
     --cor-hover-inicio: #0d3375;
-    --cor-secundaria-inicio: #003087;
-
-
     --cor-hover-what: #0d3375;
-    --cor-secundaria-what: #003087;
-    
-
     --cor-hover-previ: #0d3375;
-    --cor-secundaria-previ: #003087;
-    
     --cor-hover-preven: #0d3375;
-    --cor-secundaria-preven: #003087;
-
-
     --cor-hover-not: #0d3375;
-    --cor-secundaria-not: #003087;
-    
-
     --cor-hover-vid: #0d3375;
-    --cor-secundaria-vid: #003087;
-
     --cor-hover-cont: #0d3375;
-    --cor-secundaria-cont: #003087;
-
-
     --cor-hover-login: #0d3375;
-    --cor-secundaria-login: #003087;
-
     --cor-hover-cadast: #a4d3d3;
+
+    /* CORES SECUNDARIAS */
+    --cor-secundaria-inicio: #003087;
+    --cor-secundaria-what: #003087;
+    --cor-secundaria-previ: #003087;
+    --cor-secundaria-preven: #003087;
+    --cor-secundaria-not: #003087;
+    --cor-secundaria-vid: #003087;
+    --cor-secundaria-cont: #003087;
+    --cor-secundaria-login: #003087;
     --cor-secundaria-cadast: #ffffff;
 }
 .btnhead{
@@ -74,7 +67,7 @@ body{
     padding: 10px;
 }
 .lupa{
-    background-color: #003087;
+    background-color: var(--cor-secundaria-inicio);
     border: none;
     width: 30px;
     height: 30px;
@@ -85,70 +78,70 @@ body{
     color: var(--cor-primaria-inicio);
     background-color: var(--cor-secundaria-inicio);
 }
-
 .btn-inicio:hover{
     background-color: var(--cor-hover-inicio);
 }
+
 
 /*O que é*/
 .btn-what{
     color: var(--cor-primaria-what);
     background-color: var(--cor-secundaria-what);
 }
-
 .btn-what:hover{
     background-color: var(--cor-hover-what);
 }
+
 
 /*Previsão*/
 .btn-previ{
     color: var(--cor-primaria-previ);
     background-color: var(--cor-secundaria-previ);
 }
-
 .btn-previ:hover{
     background-color: var(--cor-hover-previ);
 }
+
 
 /*Prevenção*/
 .btn-preven{
     color: var(--cor-primaria-preven);
     background-color: var(--cor-secundaria-preven);
 }
-
 .btn-preven:hover{
     background-color: var(--cor-hover-preven);
 }
+
 
 /*Notícias*/
 .btn-not{
     color: var(--cor-primaria-not);
     background-color: var(--cor-secundaria-not);
 }
-
 .btn-not:hover{
     background-color: var(--cor-hover-not);
 }
+
 
 /*Vídeos*/
 .btn-vid{
     color: var(--cor-primaria-vid);
     background-color: var(--cor-secundaria-vid);
 }
-
 .btn-vid:hover{
     background-color: var(--cor-hover-vid);
 }
+
 
 /*Contato*/
 .btn-cont{
     color: var(--cor-primaria-cont);
     background-color: var(--cor-secundaria-cont);
 }
-
 .btn-cont:hover{
     background-color: var(--cor-hover-cont);
 }
+
 
 /*Login*/
 .botao-login{
@@ -156,10 +149,10 @@ body{
     background-color: var(--cor-secundaria-login);
     border: 1px solid #ffffff;
 }
-
 .botao-login:hover{
     background-color: var(--cor-hover-login);
 }
+
 
 /*Cadastro*/
 .botao-cadast{
@@ -167,74 +160,8 @@ body{
     background-color: #ffffff;
     border: none;
 }
-
 .botao-cadast:hover{
     background-color: var(--cor-hover-cadast);
 }
 
-/*Sessão: O que é*/
-.oQueE{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    justify-content: left;
-    background-color: #c9eefb;
-    border-radius: 36px;
-    margin: 20px;
-    padding: 10px 10px 25px 10px;  
-    text-align: left;
-    width: 85px; 
-    height: 25px;
-}
 
-.tituloOQE{
-    color: #09417C;
-    width: 500px;
-    height: 63px;
-    top: 1073px;
-    left: 36px;
-    text-align: left;
-    padding: 10px;
-    size: 64px;
-}
-
-.conteudoOQE{
-    color: #12385d;
-    text-align: left;
-    padding: 10px;
-    size: 36px;
-    width: 639;
-    height: 279;
-    top: 1179px;
-    left: 36px;
-}
-
-.saibamais{
-    color: #ffffff;
-    background-color: #003087;
-    text-decoration: none;
-    border: none;
-    width: 447;
-    height: 39;
-    top: 1484px;
-    left: 33px;
-    border-radius: 105px;
-    padding: 15px;
-    text-align: left;
-}
-
-.setadireita{
-    img-align: right;
-    width: 35;
-    height: 30;
-    top: 1488px;
-    left: 485px;
-    border:none;
-}
-
-.itemOQueE{
-    width: 653;
-    height: 603;
-    top: 984px;
-    left: 428px;
-}
