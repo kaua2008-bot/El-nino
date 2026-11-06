@@ -7,14 +7,19 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body{
     background-color: #DDF3F5;
 }
 .cabecalho{
     display: flex;
+    width: auto;
     background-color:#003087;
+    text-align: center;
     align-items: center;
+    top: 0;
+    left: 0;
     justify-content: space-between;
 }
 
@@ -22,146 +27,58 @@ body{
 :root{
     /* CORES PRIMÁRIAS */
     --cor-primaria-inicio: #ffffff;
-    --cor-primaria-what: #ffffff;
-    --cor-primaria-previ: #ffffff;
-    --cor-primaria-preven: #ffffff;
-    --cor-primaria-not: #ffffff;
-    --cor-primaria-vid: #ffffff;
-    --cor-primaria-cont: #ffffff;
-    --cor-primaria-login: #DDF3F5;
-    --cor-primaria-cadast: #003087;
+    --cor-primaria-azul-fundo: #003087;
     
     /* CORES HOVER */
-    --cor-hover-inicio: #0d3375;
-    --cor-hover-what: #0d3375;
-    --cor-hover-previ: #0d3375;
-    --cor-hover-preven: #0d3375;
-    --cor-hover-not: #0d3375;
-    --cor-hover-vid: #0d3375;
-    --cor-hover-cont: #0d3375;
-    --cor-hover-login: #0d3375;
-    --cor-hover-cadast: #a4d3d3;
+    --cor-menu-hover: #436194;
 
-    /* CORES SECUNDARIAS */
-    --cor-secundaria-inicio: #003087;
-    --cor-secundaria-what: #003087;
-    --cor-secundaria-previ: #003087;
-    --cor-secundaria-preven: #003087;
-    --cor-secundaria-not: #003087;
-    --cor-secundaria-vid: #003087;
-    --cor-secundaria-cont: #003087;
-    --cor-secundaria-login: #003087;
-    --cor-secundaria-cadast: #ffffff;
 }
 .btnhead{
-    display: flex;
     gap: 15px;
     text-decoration: none;
     border-radius: 36px;
     padding: 10px;
 }
 .botoes{
-    display: flex;
-    gap: 15px;
     border-radius: 36px;
     padding: 10px;
 }
-.lupa{
-    background-color: var(--cor-secundaria-inicio);
-    border: none;
-    width: 30px;
-    height: 30px;
+.lista{
+    display: flex;
+    list-style: none;
 }
 
-/*Início*/
-.btn-inicio{
+.btn-menu{
     color: var(--cor-primaria-inicio);
     background-color: var(--cor-secundaria-inicio);
 }
-.btn-inicio:hover{
-    background-color: var(--cor-hover-inicio);
+.btn-menu:hover{
+    background-color: var(--cor-menu-hover);
 }
 
-
-/*O que é*/
-.btn-what{
-    color: var(--cor-primaria-what);
-    background-color: var(--cor-secundaria-what);
-}
-.btn-what:hover{
-    background-color: var(--cor-hover-what);
-}
-
-
-/*Previsão*/
-.btn-previ{
-    color: var(--cor-primaria-previ);
-    background-color: var(--cor-secundaria-previ);
-}
-.btn-previ:hover{
-    background-color: var(--cor-hover-previ);
-}
-
-
-/*Prevenção*/
-.btn-preven{
-    color: var(--cor-primaria-preven);
-    background-color: var(--cor-secundaria-preven);
-}
-.btn-preven:hover{
-    background-color: var(--cor-hover-preven);
-}
-
-
-/*Notícias*/
-.btn-not{
-    color: var(--cor-primaria-not);
-    background-color: var(--cor-secundaria-not);
-}
-.btn-not:hover{
-    background-color: var(--cor-hover-not);
-}
-
-
-/*Vídeos*/
-.btn-vid{
-    color: var(--cor-primaria-vid);
-    background-color: var(--cor-secundaria-vid);
-}
-.btn-vid:hover{
-    background-color: var(--cor-hover-vid);
-}
-
-
-/*Contato*/
-.btn-cont{
-    color: var(--cor-primaria-cont);
-    background-color: var(--cor-secundaria-cont);
-}
-.btn-cont:hover{
-    background-color: var(--cor-hover-cont);
-}
-
-
-/*Login*/
-.botao-login{
-    color: var(--cor-primaria-login);
-    background-color: var(--cor-secundaria-login);
-    border: 1px solid #ffffff;
-}
-.botao-login:hover{
-    background-color: var(--cor-hover-login);
-}
-
-
-/*Cadastro*/
-.botao-cadast{
-    color: var(--cor-primaria-cadast);
-    background-color: #ffffff;
+.btn-login{
+    background-color: var(--cor-primaria-inicio);
     border: none;
+    color: var(--cor-primaria-azul-fundo) ;
 }
-.botao-cadast:hover{
-    background-color: var(--cor-hover-cadast);
+.btn-login:hover{
+    background-color: #8bb5f1;
+    color: var(--cor-primaria-azul-fundo) ;
 }
 
+/* Botão Hambúrguer (Escondido no Desktop) */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
 
+.menu-hamburguer .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
