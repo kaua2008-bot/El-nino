@@ -23,54 +23,7 @@ body{
     --cor-menu-hover: #436194;
 
 }
-.btnhead{
-    gap: 15px;
-    text-decoration: none;
-    border-radius: 36px;
-    padding: 10px;
-}
-.botoes{
-    border-radius: 36px;
-    padding: 10px;
-}
-.lista{
-    display: flex;
-    list-style: none;
-}
 
-.btn-menu{
-    color: var(--cor-primaria-inicio);
-    background-color: var(--cor-secundaria-inicio);
-}
-.btn-menu:hover{
-    background-color: var(--cor-menu-hover);
-}
-
-.btn-login{
-    background-color: var(--cor-primaria-inicio);
-    border: none;
-    color: var(--cor-primaria-azul-fundo) ;
-}
-.btn-login:hover{
-    background-color: #8bb5f1;
-    color: var(--cor-primaria-azul-fundo) ;
-}
-
-/* Botão Hambúrguer (Escondido no Desktop) */
-.menu-hamburguer {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-}
-.menu-hamburguer .bar {
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-}
 
 /* ==============================
    PREVISÃO DA REGIÃO
