@@ -1,0 +1,124 @@
+.cabecalho {
+    display: flex;
+    width: 100%;
+    background-color: var(--cor-primaria-azul-fundo);
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px; 
+    padding: 0;
+}
+
+.btnhead {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 36px;
+    padding: 10px 18px;
+    transition: background-color 0.3s ease;
+}
+
+.botoes {
+    border-radius: 36px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn-menu {
+    color: var(--cor-primaria-inicio);
+    background-color: transparent;
+}
+
+.btn-menu:hover {
+    background-color: var(--cor-menu-hover);
+}
+
+.btn-login {
+    background-color: var(--cor-primaria-inicio);
+    border: none;
+    color: var(--cor-primaria-azul-fundo);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: #8bb5f1;
+    color: var(--cor-primaria-azul-fundo);
+}
+
+/* Botão Hambúrguer (Escondido no Desktop) */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.menu-hamburguer .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* RESPONSIVIDADE MOBILE */
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px; 
+        height: 100vh;
+        background-color: var(--cor-primaria-azul-fundo);
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+        padding-top: 80px;
+        transition: right 0.4s ease; 
+        z-index: 1000;
+    }
+
+    .nav-menu.ativo {
+        right: 0;
+    }
+
+    .lista {
+        flex-direction: column;
+        align-items: stretch; /* Faz todos os itens terem a mesma largura */
+        padding: 0 25px;
+        gap: 15px;
+    }
+
+    .btnhead {
+        display: block; /* Evita que os links se sobreponham verticalmente */
+        width: 100%;
+        text-align: left;
+    }
+
+    .btn-login {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* Animação do X */
+    .menu-hamburguer.aberto .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    .menu-hamburguer.aberto .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-hamburguer.aberto .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+}
