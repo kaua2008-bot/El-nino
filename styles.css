@@ -75,7 +75,6 @@ body{
     border: none;
     cursor: pointer;
 }
-
 .menu-hamburguer .bar {
     width: 25px;
     height: 3px;
@@ -96,7 +95,6 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     color: #202124;
 }
-
 .container-previsao {
     width: 100%;
     max-width: 900px;
@@ -110,7 +108,6 @@ body{
     font-weight: 700;
     margin: 0 0 10px;
 }
-
 .titulo-previsao p {
     font-size: 16px;
     margin: 0;
@@ -131,7 +128,6 @@ body{
     box-sizing: border-box;
     background: #f7f8fa;
 }
-
 .lupa {
     width: 60px;
     display: flex;
@@ -139,12 +135,10 @@ body{
     align-items: center;
     color: #aaa;
 }
-
 .lupa svg {
     width: 25px;
     height: 25px;
 }
-
 .pesquisa-regiao input {
     flex: 1;
     min-width: 0;
@@ -155,11 +149,9 @@ body{
     font-size: 15px;
     padding: 0 5px;
 }
-
 .pesquisa-regiao input::placeholder {
     color: #aaa;
 }
-
 .pesquisa-regiao button {
     height: 100%;
     min-width: 158px;
@@ -175,7 +167,6 @@ body{
     cursor: pointer;
     border-radius: 18px;
 }
-
 .pesquisa-regiao button svg {
     width: 25px;
     height: 25px;
@@ -189,7 +180,6 @@ body{
     min-height: 172px;
     margin-top: 15px;
 }
-
 .clima-principal {
     width: 56%;
     display: flex;
@@ -197,14 +187,12 @@ body{
     gap: 12px;
     min-height: 155px;
 }
-
 .icone-clima {
     width: 135px;
     height: 115px;
     color: black;
     flex-shrink: 0;
 }
-
 .temperatura h2 {
     font-size: 48px;
     line-height: 1;
@@ -212,13 +200,11 @@ body{
     font-weight: 700;
     white-space: nowrap;
 }
-
 .temperatura p {
     font-size: 15px;
     margin: 0;
     white-space: nowrap;
 }
-
 .detalhes-clima {
     width: 44%;
     min-height: 155px;
@@ -230,12 +216,10 @@ body{
     justify-content: flex-start;
     gap: 10px;
 }
-
 .detalhes-clima p {
     font-size: 15px;
     margin: 5px 0;
 }
-
 .detalhes-clima .chuva {
     line-height: 21px;
 }
@@ -248,7 +232,6 @@ body{
     position: relative;
     margin-top: 0;
 }
-
 .barra-risco {
     width: 100%;
     height: 39px;
@@ -262,7 +245,6 @@ body{
         #e82b26 100%
     );
 }
-
 .marcador-risco {
     position: absolute;
     top: 2px;
@@ -273,7 +255,6 @@ body{
     z-index: 2;
 
 }
-
 .marcador-risco svg {
     width: 100%;
     height: 100%;
@@ -287,23 +268,19 @@ body{
     gap: 7%;
     margin-top: 0;
 }
-
 .card-risco {
     height: 148px;
     border-radius: 25px;
     padding: 12px 17px;
     box-sizing: border-box;
 }
-
 .card-risco svg {
     width: 48px;
     height: 48px;
 }
-
 .card-incendio {
     background: #f8d0c3;
 }
-
 .card-enchente {
     background: #add8fa;
 }
