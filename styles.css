@@ -12,16 +12,6 @@
 body{
     background-color: #DDF3F5;
 }
-.cabecalho{
-    display: flex;
-    width: auto;
-    background-color:#003087;
-    text-align: center;
-    align-items: center;
-    top: 0;
-    left: 0;
-    justify-content: space-between;
-}
 
 /* CORES */
 :root{

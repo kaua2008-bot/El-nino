@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
-        <img class="iconimg btnhead btn-inicio" href="/index.html" src="/imagens_usadas/sosElNinoHomeLogo.png" alt="Logo SOS" width="100">
+       <!-- CABEÇALHO -->
+       <header class="cabecalho">
+        <a href="/index.html">
+            <img class="iconimg" src="/imagens_usadas/sosElNinoHomeLogo.png" alt="Logo SOS" width="100">
+        </a>
 
-        <!-- Botões para menu flutuante mobile -->
-        <button class="menu-hamburguer" aria-label="Abrir Menu">
+        <!-- Botão Hambúrguer (Mobile) -->
+        <button class="menu-hamburguer" id="btnHamburguer" aria-label="Abrir Menu">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
         </button>
 
-        <!-- botões de navegação -->
-        <nav class="btnhead">
-             <ul class="lista">
+        <!-- Gaveta Lateral (Agrupa links e botão Entrar) -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="lista">
                 <li><a href="/index.html" class="btnhead btn-menu">Início</a></li>
                 <li><a href="#" class="btnhead btn-menu">O que é?</a></li>
                 <li><a href="#" class="btnhead btn-menu">Previsão</a></li>
                 <li><a href="#" class="btnhead btn-menu">Notícias</a></li>
                 <li><a href="#" class="btnhead btn-menu">Contato</a></li>
-             </ul>
-        </nav>
+            </ul>
 
-            <!-- botões de pesquisa/conta -->
-        <div class="botoes">
-            <button class="btnhead btn-login">Entrar</button>
-        </div>
+            <div class="botoes">
+                <button class="btnhead btn-login">Entrar</button>
+            </div>
+        </nav>
     </header>
+
     <main>
         <!-- HERO SECTION -->
         <section>
