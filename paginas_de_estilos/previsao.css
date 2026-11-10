@@ -5,29 +5,8 @@
 .previsao-regiao {
     width: 100%;
     min-height: 590px;
-    background: #f7f8fa;
     padding: 15px;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #202124;
-}
-.container-previsao {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-
-/* TÍTULO */
-.titulo-previsao h1 {
-    font-size: 32px;
-    font-weight: 700;
-    margin: 0 0 10px;
-}
-.titulo-previsao p {
-    font-size: 16px;
-    margin: 0;
-    color: #30343a;
 }
 
 

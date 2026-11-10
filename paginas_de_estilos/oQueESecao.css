@@ -1,85 +1,25 @@
-.oQueESecao{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%; 
+/* =================================================================== */
+/* CONTEÚDOS DA PARTE DO "O QUE É" */
+/* =================================================================== */
+
+.conteudo-o-que-e{
+    display: flex;
+    padding: 15px;
     align-items: center;
-    background-color: green;
 }
-.itemOQueE{
-    flex: 1;
-    padding: 20px;
-    text-align: center;
+.conteudo-o-que-e p{
+    font-size: 24px;
 }
-.oQueE{
-    background-color: #c9eefb;
-    border-radius: 36px;
-    margin: 20px;
-    padding: 10px;  
-    width: 85px; 
-}
-.notificacaoElNinoHome{
+.img-o-que-e{
     width: 300px;
 }
-.itemExplicacao{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Cria 3 colunas idênticas (1 fração cada) */
-    width: 100%;
-    gap: 15px;   
-}
-.informacaoOQueE{
-    flex: 2;
-    text-align: left;
-}
 
-/*Sessão: O que é*/
-.tituloOQE{
-    color: #09417C;
-    width: 500px;
-    height: 63px;
-    top: 1073px;
-    left: 36px;
-    text-align: left;
-    padding: 10px;
-    size: 64px;
-}
-
-.conteudoOQE{
-    color: #12385d;
-    text-align: left;
-    padding: 10px;
-    size: 36px;
-    width: 639;
-    height: 279;
-    top: 1179px;
-    left: 36px;
-}
-
-.saibamais{
-    color: #ffffff;
-    background-color: #003087;
-    text-decoration: none;
-    border: none;
-    width: 447;
-    height: 39;
-    top: 1484px;
-    left: 33px;
-    border-radius: 105px;
-    padding: 15px;
-    text-align: left;
-}
-
-.setadireita{
-    img-align: right;
-    width: 35;
-    height: 30;
-    top: 1488px;
-    left: 485px;
-    border:none;
-}
-
-.itemOQueE{
-    width: 653;
-    height: 603;
-    top: 984px;
-    left: 428px;
+@media (max-width:768px) {
+    .conteudo-o-que-e p{
+        font-size: 16px;
+        padding: 0;
+    }
+    .img-o-que-e{
+        width: 200px;
+    }
 }
