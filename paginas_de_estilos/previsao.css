@@ -154,27 +154,44 @@
 /* CARDS DE RISCO */
 .cards-risco {
     display: grid;
+    padding: 16px 8px;
     grid-template-columns: 1fr 1fr;
-    gap: 7%;
-    margin-top: 0;
+    gap: 10px;
+    margin-bottom: 1px;
 }
 .card-risco {
-    height: 148px;
-    border-radius: 25px;
-    padding: 12px 17px;
-    box-sizing: border-box;
+    border-radius: 16px;
+    padding: 16px 8px;
 }
-.card-risco svg {
-    width: 48px;
-    height: 48px;
+.card-aviso-risco{
+    display: flex;
+    align-items: center;
 }
 .card-incendio {
-    background: #f8d0c3;
+    background: #F6D1C5;
 }
 .card-enchente {
-    background: #add8fa;
+    background: #B0DAFF;
 }
-
+.img-aviso{
+    width: 50px;
+    margin-bottom: 16px;
+}
+.saiba-mais-aviso{
+    margin:10px auto 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.seca{
+    background-color: #FF5722;
+}
+.enchente{
+    background-color: #0F4C81;
+}
 
 /* ========================================================================== */
 /* RESPONSIVIDADE */
@@ -253,9 +270,7 @@
     }
 
     .card-risco {
-        height: 125px;
         border-radius: 20px;
-        padding: 10px;
     }
 
     .card-risco svg {
