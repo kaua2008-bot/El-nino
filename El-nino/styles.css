@@ -1,0 +1,42 @@
+/* importes para outras páginas de estilo para facilitar a legibilidade desse css */
+
+@import url("/paginas_de_estilos/cabecalho.css");
+@import url("/paginas_de_estilos/heroSection.css");
+@import url("/paginas_de_estilos/oQueESecao.css");
+@import url("/paginas_de_estilos/previsao.css");
+@import url("/paginas_de_estilos/oQueESecao.css");
+@import url("/paginas_de_estilos/diferencasNinoNina.css");
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CORES */
+:root{
+    /* CORES PRIMÁRIAS */
+    --cor-primaria-inicio: #ffffff;
+    --cor-primaria-azul-fundo: #003087;
+    --cor-primaria-importante: #FF5722;
+    
+    /* CORES HOVER */
+    --cor-menu-hover: #436194;
+
+}
+
+/* =================================================================== */
+/* TÍTULOS GERAIS */
+/* =================================================================== */
+
+.titulo-secoes{
+    display: flex;
+    padding: 10px;
+    margin-left: 5px;
+}
+
+.button-importante{
+    margin: 0 10px 0 0;
+    border: none;
+    background-color: var(--cor-primaria-importante);
+}

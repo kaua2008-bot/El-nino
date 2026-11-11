@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOS El Ninõ</title>
+    <meta name="description" content="Avisos e orintações para a prevenção do El-ninõ">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+       <!-- CABEÇALHO -->
+    <header class="cabecalho">
+        <a href="/index.html">
+            <img class="iconimg" src="/imagens_usadas/sosElNinoHomeLogo.png" alt="Logo SOS" width="100">
+        </a>
+
+        <!-- Botão Hambúrguer (Mobile) -->
+        <button class="menu-hamburguer" id="btnHamburguer" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <!-- Gaveta Lateral -->
+        <nav class="nav-menu" id="navMenu">
+            <ul class="lista">
+                <li><a href="/index.html" class="btnhead btn-menu">Início</a></li>
+                <li><a href="#o-que-e" class="btnhead btn-menu">O que é?</a></li>
+                <li><a href="#previsao" class="btnhead btn-menu">Previsão</a></li>
+                <li><a href="#" class="btnhead btn-menu">Notícias</a></li>
+                <li><a href="#" class="btnhead btn-menu">Contato</a></li>
+            </ul>
+
+            <div class="botoes">
+                <button class="btnhead btn-login">Entrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-container">
+                <h1><span color="white">S.O.S</span> <span color="#FF5722">EL NIÑO</span></h1>
+                <p>Informações e preparo para<br>enfrentar os impactos do<br>fenômeno</p>
+                <button class="hero_button">Ver detalhes</button>
+            </div>
+        </section>
+            
+
+        <section class="previsao-regiao">
+
+            <div class="container-previsao">
+
+                <!-- TÍTULO -->
+                <div class="titulo-previsao">
+                    <h1>Previsão da Sua Região</h1>
+                    <p>Confira as condições climáticas e o risco na sua região</p>
+                </div>
+
+                <!-- PESQUISA -->
+                <div class="pesquisa-regiao">
+                    <span class="lupa">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="10.8" cy="10.8" r="8"
+                                stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M17 17L22 22"
+                                stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                    </span>
+
+                    <input type="text" id="cidade"
+                        placeholder="Digite sua cidade ou estado...">
+
+                    <button id="buscarCidade">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="10.8" cy="10.8" r="8"
+                                stroke="currentColor" stroke-width="1.5"/>
+                            <path d="M17 17L22 22"
+                                stroke="currentColor" stroke-width="1.5"/>
+                        </svg>
+                        Buscar
+                    </button>
+                </div>
+
+                <!-- PREVISÃO DO TEMPO -->
+                <div class="informacoes-clima">
+
+                    <div class="clima-principal">
+
+                        <svg class="icone-clima" viewBox="0 0 130 110" fill="none">
+                            <!-- Sol -->
+                            <circle cx="83" cy="30" r="17"
+                                stroke="currentColor" stroke-width="4"/>
+
+                            <path d="M83 5V0 M83 60V54 M58 30H52
+                            M113 30H107 M65 12L60 7 M101 12L106 7
+                            M101 48L106 53 M65 48L60 53"
+                                stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round"/>
+
+                            <!-- Nuvem -->
+                            <path d="M23 82H108
+                            C120 82 125 73 125 64
+                            C125 54 117 46 107 46
+                            C105 28 90 18 75 21
+                            C64 23 57 31 54 39
+                            C39 32 24 41 23 55
+                            C12 57 7 65 7 72
+                            C7 78 13 82 23 82Z"
+                                stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+
+                            <!-- Raio -->
+                            <path d="M67 69L57 85H69L63 101"
+                                stroke="currentColor" stroke-width="4"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+
+                        <div class="temperatura">
+                            <h2>28°C</h2>
+                            <p>parcialmente nublado</p>
+                        </div>
+
+                    </div>
+
+                    <div class="detalhes-clima">
+                        <p class="chuva">💧 Chuva<br>12 mm</p>
+                        <p>sensação térmica</p>
+                    </div>
+
+                </div>
+
+                <!-- INDICADOR DE RISCO -->
+                <div class="indicador-risco">
+                    <div class="barra-risco"></div>
+
+                    <div class="marcador-risco">
+                        <svg viewBox="0 0 40 40">
+                            <path d="M3 3L20 13L37 3L20 38Z"
+                                fill="black"/>
+                        </svg>
+                    </div>
+                </div>
+
+        <section>
+
+        </section>    
+                
+            
+        <!-- SEÇÃO DE O QUE É -->
+        <section>
+            <div class="titulo-secoes">
+                <button class="button-importante"></button>
+                <h1 id="o-que-e">O que é EL NIÑO?</h1>
+            </div>
+            <p style="padding-left: 15px;">Entenda o fenômeno que afeta o clima em todo o mundo.</p>
+            <div class="conteudo-o-que-e">
+                <p>O El Niño é um aquecimento anormal das águas do Oceano Pacífico, que altera o regime de chuvas em diversas regiões do planeta, causando secas, enchentes e eventos climáticos extremos. </p>
+                <img class="img-o-que-e" src="/imagens_usadas/notificacaoElNinoHome.png">
+            </div>
+        </section>
+
+
+        <!-- SEÇÃO DE DIFERENÇA ENTRE NIÑO E NIÑA -->
+        <section>
+            <div class="titulo-secoes">
+                <button class="button-importante"></button>
+                <h1 id="o-que-e">Diferenças entre EL NIÑO e LA NIÑA</h1>
+            </div>
+            <div class="diferencas-nino-nina">
+                <div class="el-nino">
+                    <div class="titulo-el">
+                        <h3>EL NIÑO</h3>
+                    </div>
+                    <div class="texto-diferenciais">
+                        <li>Águas do Pacífico  mais quentes</li>
+                        <li>Mais chuvas na região Sul</li>
+                        <li>Seca nas regiões Norte e Nordeste</li>
+                    </div>
+                </div>
+                <div class="la-nina">
+                    <div class="titulo-la">
+                        <h3>LA NIÑA</h3>
+                    </div>
+                    <div class="texto-diferenciais">
+                        <ul>
+                            <li>Águas do Pacífico  mais frias</li>
+                            <li>Mais chuvas nas regiões Norte e Nordeste</li>
+                            <li>Seca na região Sul</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SEÇÃO DE PREVISÃO DO TEMPO -->
+        <section class="previsao-regiao">
+            <div>
+                <!-- TÍTULO -->
+                <div class="titulo-secoes">
+                    <button class="button-importante"></button>
+                    <h1 id="previsao">Previsão da Sua Região</h1>
+                </div>
+                <p>Confira as condições climáticas e o risco na sua região</p>
+
+                <!-- PESQUISA -->
+                <div class="pesquisa-regiao">
+                    <span><img class="lupa" src="/imagens_usadas/lupaDePesquisaCinza.png"></span>
+
+                    <input type="text" id="cidade"
+                        placeholder="Digite sua cidade ou estado...">
+
+                    <button id="buscarCidade"><img class="lupa" src="/imagens_usadas/lupaDePesquisa.png">Buscar</button>
+                </div>
+
+                <!-- PREVISÃO DO TEMPO -->
+                <div class="informacoes-clima">
+                    <div class="clima-principal">
+                        <img src="/imagens_usadas/climaInformação.png" class="icone-clima">
+
+                        <div class="temperatura">
+                            <h2>28°C</h2>
+                            <p>parcialmente nublado</p>
+                        </div>
+                    </div>
+
+                    <div class="detalhes-clima">
+                        <p><img class="detalhes-previsao" src="/imagens_usadas/climaPrevenaoHome.png"> Chuva 12 mm</p>
+                        <p><img class="detalhes-previsao" src="/imagens_usadas/temperaturaPrevencaoHome.png"> Sensação térmica</p>
+                        <p><img class="detalhes-previsao" src="/imagens_usadas/ventoPrevencaoHome.png"> Vento</p>
+                    </div>
+
+                </div>
+
+                <!-- INDICADOR DE RISCO -->
+                <div class="indicador-risco">
+                    <div class="barra-risco"></div>
+
+                    <div class="marcador-risco">
+                        <svg viewBox="0 0 40 40">
+                            <path d="M3 3L20 13L37 3L20 38Z"
+                                fill="black"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- CARDS DE RISCO -->
+                <div class="cards-risco">
+
+                    <div class="card-risco card-incendio">
+                        <svg viewBox="0 0 50 50" fill="none">
+                            <path d="M25 4L4 23H10V44H21V30H29V44H40V23H46L25 4Z"
+                                fill="#ff4c27"/>
+                        </svg>
+                    </div>
+
+                    <div class="card-risco card-enchente">
+                        <svg viewBox="0 0 55 55" fill="none">
+                            <path d="M9 22L29 5L49 22H43V39H15V22H9Z"
+                                stroke="#164d7c" stroke-width="2"
+                                stroke-linejoin="round"/>
+                            <path d="M29 5V17 M35 9V15"
+                                stroke="#164d7c" stroke-width="2"/>
+                            <path d="M5 43Q10 38 15 43T25 43T35 43T45 43T55 43"
+                                stroke="#164d7c" stroke-width="2"/>
+                            <path d="M5 50Q10 45 15 50T25 50T35 50T45 50T55 50"
+                                stroke="#164d7c" stroke-width="2"/>
+                        </svg>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

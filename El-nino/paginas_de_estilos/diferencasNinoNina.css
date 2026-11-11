@@ -1,0 +1,60 @@
+.diferencas-nino-nina{
+    display:flex ;
+    justify-content: space-around;
+    gap: 15px;
+}
+.el-nino{
+    background-color: #F6D1C5;
+    text-align: center;
+}
+.titulo-el{
+    background-color: #FF5722;
+    padding: 5px 40px;
+    width: 100%;
+}
+
+.texto-diferenciais{
+    text-align: center;
+    padding: 50px;
+}
+
+.la-nina{
+    background-color: #B0DAFF;
+    text-align: center;
+}
+.titulo-la{
+    background-color: #0F4C81;
+    padding: 5px 40px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .diferencas-nino-nina{
+        display:flex ;
+        justify-content: space-around;
+        margin: 10px;
+    }
+    .el-nino{
+        background-color: #F6D1C5;
+    }
+    .titulo-el{
+        background-color: #FF5722;
+        padding: 5px 35px;
+        width: 100%;
+    }
+    
+    .texto-diferenciais{
+        padding-left: 5px;
+        padding: 10px;
+    }
+    
+    .la-nina{
+        background-color: #B0DAFF;
+        text-align: center;
+    }
+    .titulo-la{
+        background-color: #0F4C81;
+        padding: 5px 30px;
+        width: 100%;
+    }
+}

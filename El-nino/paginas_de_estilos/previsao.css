@@ -1,0 +1,266 @@
+/* ========================================================================== */
+   /* PREVISÃO DA REGIÃO */
+/* ========================================================================== */
+.previsao-regiao {
+    width: 100%;
+    min-height: 590px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* PESQUISA */
+.pesquisa-regiao {
+    width: 100%;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #6688d8;
+    border-radius: 20px;
+    margin-top: 25px;
+    overflow: hidden;
+    box-sizing: border-box;
+    background: #f7f8fa;
+}
+.lupa {
+    width: 30px;
+    height: 25px;
+    padding-left: 5px ;
+
+}
+.pesquisa-regiao input {
+    flex: 1;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    padding: 0 5px;
+}
+.pesquisa-regiao input::placeholder {
+    color: #aaa;
+}
+.pesquisa-regiao button {
+    height: 100%;
+    min-width: 158px;
+    padding: 0 15px;
+    border: none;
+    background: #073b91;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border-radius: 18px;
+}
+.pesquisa-regiao button svg {
+    width: 25px;
+    height: 25px;
+}
+
+
+/* INFORMAÇÕES DO CLIMA */
+.informacoes-clima {
+    display: flex;
+    align-items: center;
+    min-height: 172px;
+    margin-top: 15px;
+}
+.clima-principal {
+    width: 56%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 155px;
+}
+.icone-clima {
+    width: 135px;
+    height: 115px;
+    padding: 10px;
+}
+.temperatura h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.temperatura p {
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+}
+.detalhes-clima {
+    width: 44%;
+    min-height: 155px;
+    border-left: 1px dashed #555;
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.detalhes-clima p {
+    font-size: 15px;
+    margin: 5px 0;
+    padding: 10px;
+}
+.detalhes-clima .detalhes-previsao {
+    line-height: 21px;
+    width: 20px;
+}
+
+
+/* BARRA DE RISCO */
+.indicador-risco {
+    width: 100%;
+    height: 55px;
+    position: relative;
+    margin-top: 0;
+}
+.barra-risco {
+    width: 100%;
+    height: 39px;
+    border-radius: 30px;
+    background: linear-gradient(
+        to right,
+        #00f05b 0%,
+        #9cf000 27%,
+        #fff000 47%,
+        #ff9e00 70%,
+        #e82b26 100%
+    );
+}
+.marcador-risco {
+    position: absolute;
+    top: 2px;
+    left: 54%;
+    transform: translateX(-70%);
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+
+}
+.marcador-risco svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* CARDS DE RISCO */
+.cards-risco {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 7%;
+    margin-top: 0;
+}
+.card-risco {
+    height: 148px;
+    border-radius: 25px;
+    padding: 12px 17px;
+    box-sizing: border-box;
+}
+.card-risco svg {
+    width: 48px;
+    height: 48px;
+}
+.card-incendio {
+    background: #f8d0c3;
+}
+.card-enchente {
+    background: #add8fa;
+}
+
+
+/* ========================================================================== */
+/* RESPONSIVIDADE */
+/* ========================================================================== */
+
+@media (max-width: 600px) {
+
+    .previsao-regiao {
+        padding: 15px;
+    }
+
+    .titulo-previsao h1 {
+        font-size: 25px;
+    }
+
+    .titulo-previsao p {
+        font-size: 13px;
+    }
+
+    .pesquisa-regiao {
+        height: 52px;
+        margin-top: 22px;
+    }
+
+    .pesquisa-regiao button {
+        min-width: 105px;
+        font-size: 15px;
+        gap: 7px;
+        padding: 0 10px;
+    }
+
+    .pesquisa-regiao button svg {
+        width: 20px;
+    }
+
+    .lupa {
+        width: 30px;
+        height: 25px;
+        padding-left: 5px ;
+    }
+
+    .informacoes-clima {
+        min-height: 155px;
+    }
+
+    .clima-principal {
+        width: 58%;
+        gap: 3px;
+    }
+
+    .icone-clima {
+        width: 85px;
+        height: 90px;
+    }
+
+    .temperatura h2 {
+        font-size: 32px;
+    }
+
+    .temperatura p {
+        font-size: 11px;
+        white-space: normal;
+    }
+
+    .detalhes-clima {
+        width: 42%;
+        padding-left: 10px;
+    }
+
+    .detalhes-clima p {
+        font-size: 12px;
+    }
+
+    .cards-risco {
+        gap: 15px;
+    }
+
+    .card-risco {
+        height: 125px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .card-risco svg {
+        width: 40px;
+        height: 40px;
+    }
+
+}
