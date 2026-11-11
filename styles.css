@@ -32,8 +32,10 @@
 .titulo-secoes{
     display: flex;
     padding: 10px;
+    font-size: 24px;
     margin-left: 5px;
 }
+
 .button-importante{
     margin: 0 10px 0 0;
     border: none;
