@@ -4,3 +4,20 @@
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.defCivil{
+    background-color: #edeef8;
+    border-radius: 40px;
+}
+.defCivil-titulo{
+    align-items: center;
+}
+.imgEmergencia{
+    width: 100px;
+}
+.imgTelefone{
+    width: 78px;
+}
+.numEmergencia{
+    display: flex;
+}
