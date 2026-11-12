@@ -6,22 +6,10 @@
     display: flex;
     padding: 15px;
     align-items: center;
+    width: 100%;
 }
 .conteudo-o-que-e p{
     font-size: 24px;
-}
-.img-o-que-e{
-    width: 300px;
-}
-
-@media (max-width:768px) {
-    .conteudo-o-que-e p{
-        font-size: 16px;
-        padding: 0;
-    }
-    .img-o-que-e{
-        width: 200px;
-    }
 }
 
 /* =================================================================== */
@@ -29,13 +17,35 @@
 /* =================================================================== */
 .informacoes-adicionais-o-que-e{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 .como-funciona{
     background-color: #9ECDDE;
     margin: 10px;
+    min-width: 450px;
+    max-width: 500px;
+    padding: 8px 16px;
 }
-.como-funciona img{
-    width: 20px;
+.img-o-que-e{
+    width: 100px;
     align-items: center;
+}
+
+@media (max-width:768px) {
+    .informacoes-adicionais-o-que-e{
+        display: grid;
+        justify-content: space-around;
+        max-width: 100vh;
+    }
+    .conteudo-o-que-e p{
+        font-size: 16px;
+        padding: 0;
+    }
+    .img-o-que-e{
+        width: 200px;
+    }
+    .como-funciona{
+        background-color: #9ECDDE;
+        
+    }
 }
