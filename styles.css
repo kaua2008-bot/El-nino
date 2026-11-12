@@ -14,11 +14,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main{
-    max-width: 1160px;
-    margin-left: 10%;
-}
-
 /* CORES */
 :root{
     /* CORES PRIMÁRIAS */
@@ -28,6 +23,7 @@ main{
     
     /* CORES HOVER */
     --cor-menu-hover: #436194;
+
 }
 
 /* =================================================================== */
@@ -45,11 +41,4 @@ main{
     margin: 0 10px 0 0;
     border: none;
     background-color: var(--cor-primaria-importante);
-}
-
-@media (max-width:768px) {
-    main{
-        max-width: 400px;
-        margin: 5%;
-    }
 }
