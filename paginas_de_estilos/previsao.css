@@ -1,6 +1,5 @@
 .container-previsao{
     margin: 0;
-    background: radial-gradient(ellipse at top right, #173e63 0, transparent 55%), #091525;
     min-height: 100vh;
     max-width: 1160px;
     margin: auto;
@@ -8,58 +7,32 @@
 }
 
 .topo {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 24px;
     margin-bottom: 24px;
 }
-
-.eyebrow {
-    color: #73c7ff;
-    letter-spacing: .13em;
-    font-size: .73rem;
-    font-weight: 800;
-}
-
-h1 {
-    font-size: clamp(1.9rem, 4vw, 3rem);
-    margin: 8px 0;
-}
-
-h2 {
-    font-size: 1.2rem;
-    margin: 0 0 14px;
-}
-
-.subtitulo,
-#data-atual,
-footer {
-    color: #aabed4;
-}
-
 .busca {
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+    margin: 10px;
 }
-
 .busca input {
-    background: #152a43;
-    color: #fff;
+    color: #b5b5b5;
     border: 1px solid #44617c;
     border-radius: 12px;
-    padding: 14px;
+    padding: 10px 50px ;
     min-width: 200px;
     font: inherit;
 }
 
-button {
-    background: #35aaf2;
-    color: #061424;
+.btn-pesquisa-cidade {
+    background: #0F4C81;
+    color: #f8f8f8;
     border: 0;
     border-radius: 12px;
-    padding: 14px 18px;
+    padding: 14px 28px;
     font-weight: 800;
     cursor: pointer;
 }
