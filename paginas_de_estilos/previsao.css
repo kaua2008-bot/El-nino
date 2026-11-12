@@ -1,281 +1,265 @@
-/* ========================================================================== */
-   /* PREVISÃO DA REGIÃO */
-/* ========================================================================== */
-.previsao-regiao {
-    width: 100%;
-    min-height: 590px;
-    padding: 15px;
-    font-family: Arial, Helvetica, sans-serif;
+.container-previsao{
+    margin: 0;
+    background: radial-gradient(ellipse at top right, #173e63 0, transparent 55%), #091525;
+    min-height: 100vh;
+    max-width: 1160px;
+    margin: auto;
+    padding: 36px 22px;
 }
 
-
-/* PESQUISA */
-.pesquisa-regiao {
-    width: 100%;
-    height: 57px;
+.topo {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    border: 1px solid #6688d8;
-    border-radius: 20px;
-    margin-top: 25px;
-    overflow: hidden;
-    box-sizing: border-box;
-    background: #f7f8fa;
+    gap: 24px;
+    margin-bottom: 24px;
 }
-.lupa {
-    width: 30px;
-    height: 25px;
-    padding-left: 5px ;
 
+.eyebrow {
+    color: #73c7ff;
+    letter-spacing: .13em;
+    font-size: .73rem;
+    font-weight: 800;
 }
-.pesquisa-regiao input {
-    flex: 1;
-    min-width: 0;
-    height: 100%;
-    border: none;
-    outline: none;
-    background: transparent;
-    font-size: 15px;
-    padding: 0 5px;
+
+h1 {
+    font-size: clamp(1.9rem, 4vw, 3rem);
+    margin: 8px 0;
 }
-.pesquisa-regiao input::placeholder {
-    color: #aaa;
+
+h2 {
+    font-size: 1.2rem;
+    margin: 0 0 14px;
 }
-.pesquisa-regiao button {
-    height: 100%;
-    min-width: 158px;
-    padding: 0 15px;
-    border: none;
-    background: #073b91;
-    color: white;
-    font-size: 20px;
+
+.subtitulo,
+#data-atual,
+footer {
+    color: #aabed4;
+}
+
+.busca {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.busca input {
+    background: #152a43;
+    color: #fff;
+    border: 1px solid #44617c;
+    border-radius: 12px;
+    padding: 14px;
+    min-width: 200px;
+    font: inherit;
+}
+
+button {
+    background: #35aaf2;
+    color: #061424;
+    border: 0;
+    border-radius: 12px;
+    padding: 14px 18px;
+    font-weight: 800;
     cursor: pointer;
-    border-radius: 18px;
-}
-.pesquisa-regiao button svg {
-    width: 25px;
-    height: 25px;
 }
 
-
-/* INFORMAÇÕES DO CLIMA */
-.informacoes-clima {
-    display: flex;
-    align-items: center;
-    min-height: 172px;
-    margin-top: 15px;
-}
-.clima-principal {
-    width: 56%;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    min-height: 155px;
-}
-.icone-clima {
-    width: 135px;
-    height: 115px;
-    padding: 10px;
-}
-.temperatura h2 {
-    font-size: 48px;
-    line-height: 1;
-    margin: 0;
-    font-weight: 700;
-    white-space: nowrap;
-}
-.temperatura p {
-    font-size: 15px;
-    margin: 0;
-    white-space: nowrap;
-}
-.detalhes-clima {
-    width: 44%;
-    min-height: 155px;
-    border-left: 1px dashed #555;
-    padding-left: 15px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 10px;
-}
-.detalhes-clima p {
-    font-size: 15px;
-    margin: 5px 0;
-    padding: 10px;
-}
-.detalhes-clima .detalhes-previsao {
-    line-height: 21px;
-    width: 20px;
+button:hover {
+    filter: brightness(1.12);
 }
 
-
-/* BARRA DE RISCO */
-.indicador-risco {
-    width: 100%;
-    height: 55px;
-    position: relative;
-    margin-top: 0;
-}
-.barra-risco {
-    width: 100%;
-    height: 39px;
-    border-radius: 30px;
-    background: linear-gradient(
-        to right,
-        #00f05b 0%,
-        #9cf000 27%,
-        #fff000 47%,
-        #ff9e00 70%,
-        #e82b26 100%
-    );
-}
-.marcador-risco {
-    position: absolute;
-    top: 2px;
-    left: 54%;
-    transform: translateX(-70%);
-    width: 40px;
-    height: 40px;
-    z-index: 2;
-
-}
-.marcador-risco svg {
-    width: 100%;
-    height: 100%;
+button:disabled {
+    opacity: .6;
+    cursor: wait;
 }
 
+.secundario {
+    background: #254a69;
+    color: #eaf2ff;
+}
 
-/* CARDS DE RISCO */
-.cards-risco {
+.card {
+    background: linear-gradient(140deg, rgba(29, 57, 86, .96), rgba(16, 35, 56, .98));
+    border: 1px solid #35506b;
+    border-radius: 22px;
+    padding: 28px;
+    margin: 20px 0;
+    box-shadow: 0 14px 35px #0002;
+}
+
+.atual {
     display: grid;
-    padding: 16px 8px;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-bottom: 1px;
-}
-.card-risco {
-    border-radius: 16px;
-    padding: 16px 8px;
-}
-.card-aviso-risco{
-    display: flex;
+    gap: 30px;
     align-items: center;
 }
-.card-incendio {
-    background: #F6D1C5;
-}
-.card-enchente {
-    background: #B0DAFF;
-}
-.img-aviso{
-    width: 50px;
-    margin-bottom: 16px;
-}
-.saiba-mais-aviso{
-    margin:10px auto 0;
-    padding: 10px;
+
+.temperatura {
     display: flex;
     align-items: center;
-    border: none;
-    border-radius: 10px;
-    color: white;
-}
-.seca{
-    background-color: #FF5722;
-}
-.enchente{
-    background-color: #0F4C81;
+    gap: 8px;
+    margin: 14px 0;
 }
 
-/* ========================================================================== */
-/* RESPONSIVIDADE */
-/* ========================================================================== */
+.temperatura strong {
+    font-size: clamp(4rem, 9vw, 6rem);
+    line-height: 1;
+}
 
-@media (max-width: 600px) {
+.temperatura span:last-child {
+    font-size: 2rem;
+    align-self: flex-start;
+}
 
-    .previsao-regiao {
-        padding: 15px;
+.temperatura #icone-atual {
+    font-size: 3.5rem;
+}
+
+.metricas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.metricas article {
+    background: #ffffff0d;
+    border: 1px solid #ffffff18;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.metricas span {
+    display: block;
+    color: #b2c5d8;
+    font-size: .88rem;
+    margin-bottom: 10px;
+}
+
+.metricas strong {
+    font-size: 1.45rem;
+}
+
+.cabecalho-secao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.grafico {
+    height: 300px;
+    position: relative;
+}
+
+.dias {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    gap: 12px;
+}
+
+.dia {
+    background: #ffffff0b;
+    border: 1px solid #ffffff18;
+    border-radius: 14px;
+    padding: 16px 9px;
+    text-align: center;
+}
+
+.dia .emoji {
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+.dia .max {
+    font-weight: 800;
+}
+
+.dia .min {
+    color: #aabed4;
+}
+
+.dia .chuva {
+    font-size: .82rem;
+    color: #8ed2ff;
+    margin-top: 9px;
+}
+
+.status {
+    min-height: 1.5em;
+    color: #9cddff;
+}
+
+.status.erro {
+    color: #ffb1b1;
+}
+
+footer {
+    text-align: center;
+    font-size: .85rem;
+    padding: 12px;
+}
+
+a {
+    color: #8ed2ff;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 800px) {
+    .topo,
+    .atual {
+        display: block;
     }
 
-    .titulo-previsao h1 {
-        font-size: 25px;
+    .busca {
+        margin-top: 24px;
     }
 
-    .titulo-previsao p {
-        font-size: 13px;
+    .dias {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .pesquisa-regiao {
-        height: 52px;
+    .metricas {
         margin-top: 22px;
     }
+}
 
-    .pesquisa-regiao button {
-        min-width: 105px;
-        font-size: 15px;
-        gap: 7px;
-        padding: 0 10px;
+@media (max-width: 520px) {
+    .container {
+        padding: 20px 12px;
     }
 
-    .pesquisa-regiao button svg {
-        width: 20px;
+    .card {
+        padding: 18px;
     }
 
-    .lupa {
-        width: 30px;
-        height: 25px;
-        padding-left: 5px ;
+    .busca input {
+        min-width: 0;
+        flex: 1;
+        width: 130px;
     }
 
-    .informacoes-clima {
-        min-height: 155px;
+    .dias {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .clima-principal {
-        width: 58%;
-        gap: 3px;
+    .cabecalho-secao {
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    .icone-clima {
-        width: 85px;
-        height: 90px;
+    .grafico {
+        height: 260px;
     }
-
-    .temperatura h2 {
-        font-size: 32px;
-    }
-
-    .temperatura p {
-        font-size: 11px;
-        white-space: normal;
-    }
-
-    .detalhes-clima {
-        width: 42%;
-        padding-left: 10px;
-    }
-
-    .detalhes-clima p {
-        font-size: 12px;
-    }
-
-    .cards-risco {
-        gap: 15px;
-    }
-
-    .card-risco {
-        border-radius: 20px;
-    }
-
-    .card-risco svg {
-        width: 40px;
-        height: 40px;
-    }
-
 }

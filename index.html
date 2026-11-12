@@ -6,6 +6,7 @@
     <title>SOS El Ninõ</title>
     <meta name="description" content="Avisos e orintações para a prevenção do El-ninõ">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
 </head>
 <body>
        <!-- CABEÇALHO -->
@@ -113,80 +114,21 @@
 
 
         <!-- SEÇÃO DE PREVISÃO DO TEMPO -->
-        <section class="previsao-regiao">
-            <div>
-                <!-- TÍTULO -->
-                <div class="titulo-secoes">
-                    <button class="button-importante"></button>
-                    <h3 id="previsao">Previsão da Sua Região</h3>
-                </div>
-                <p>Confira as condições climáticas e o risco na sua região</p>
-
-                <!-- PESQUISA -->
-                <div class="pesquisa-regiao">
-                    <span><img class="lupa" src="/imagens_usadas/lupaDePesquisaCinza.png"></span>
-
-                    <input type="text" id="cidade"
-                        placeholder="Digite sua cidade ou estado...">
-
-                    <button id="buscarCidade"><img class="lupa" src="/imagens_usadas/lupaDePesquisa.png">Buscar</button>
-                </div>
-
-                <!-- PREVISÃO DO TEMPO -->
-                <div class="informacoes-clima">
-                    <div class="clima-principal">
-                        <img src="/imagens_usadas/climaInformação.png" class="icone-clima">
-
-                        <div class="temperatura">
-                            <h2>28°C</h2>
-                            <p>parcialmente nublado</p>
-                        </div>
-                    </div>
-
-                    <div class="detalhes-clima">
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/climaPrevenaoHome.png"> Chuva 12 mm</p>
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/temperaturaPrevencaoHome.png"> Sensação térmica</p>
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/ventoPrevencaoHome.png"> Vento</p>
-                    </div>
-
-                </div>
-
-                <!-- INDICADOR DE RISCO -->
-                <div class="indicador-risco">
-                    <div class="barra-risco"></div>
-
-                    <div class="marcador-risco">
-                        <img src="/imagens_usadas/_➤.png">
-                    </div>
-                </div>
-
-                <!-- CARDS DE RISCO -->
-                <div class="titulo-secoes">
-                    <button class="button-importante"></button>
-                    <h3 id="o-que-e">Guias de Prevenção</h3>
-                </div>
-                <div class="cards-risco">
-                    <div class="card-risco card-incendio">
-                        <div class="card-aviso-risco">
-                            <img class="img-aviso" src="/imagens_usadas/casaSecaHome.png">
-                            <h3>Guia de Prevenção para Secas</h3>
-                        </div>
-                        <p>Dicas para encontrar água e se preparar</p>
-                        <button class="saiba-mais-aviso seca" href="#">Saiba Mais →</button>
-                    </div>
-                    <div class="card-risco card-enchente">
-                        <div class="card-aviso-risco">
-                            <img class="img-aviso" src="/imagens_usadas/casaEnxenteHome.png">
-                            <h3>Guia de Prevenção para Enchentes</h3>
-                        </div>
-                        <p>Dicas para encontrar água e se preparar</p>
-                        <button class="saiba-mais-aviso enchente" href="#">Saiba Mais →</button>
-                    </div>
-
-                </div>
-
+        <section class="container-previsao">
+            <div class="topo">
+                <div><p class="eyebrow">MONITORAMENTO METEOROLÓGICO</p><h1>Clima em tempo real</h1><p class="subtitulo">Condições atuais e previsão para os próximos dias</p></div>
+                <form id="form-busca" class="busca"><label class="sr-only" for="cidade">Cidade</label><input id="cidade" name="cidade" placeholder="Digite uma cidade" value="Toledo" required minlength="2"><button type="submit">Pesquisar</button></form>
             </div>
 
+            <p id="status" class="status" role="status" aria-live="polite"></p>
+
+            <section class="atual card" aria-labelledby="titulo-atual">
+                <div><p class="eyebrow">CONDIÇÕES ATUAIS</p><h2 id="titulo-atual">Toledo, Paraná</h2><p id="data-atual">—</p><div class="temperatura"><span id="icone-atual" aria-hidden="true">⛅</span><strong id="temperatura">—</strong><span>°C</span></div><p id="descricao">Carregando...</p></div>
+                <div class="metricas"><article><span>Sensação térmica</span><strong id="sensacao">—</strong></article><article><span>Umidade</span><strong id="umidade">—</strong></article><article><span>Vento</span><strong id="vento">—</strong></article><article><span>Precipitação atual</span><strong id="precipitacao">—</strong></article></div>
+            </section>
+            <section class="card" aria-labelledby="titulo-grafico"><div class="cabecalho-secao"><h2 id="titulo-grafico">Temperatura nas próximas 24 horas</h2><button id="atualizar" type="button" class="secundario">Atualizar dados</button></div><div class="grafico"><canvas id="grafico-temperatura" role="img" aria-label="Gráfico da previsão horária de temperatura"></canvas></div></section>
+            <section class="card" aria-labelledby="titulo-previsao"><h2 id="titulo-previsao">Previsão para 7 dias</h2><div id="previsao" class="dias"></div></section>
+            <footer>Dados: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Horários locais da cidade consultada · Temperaturas e previsões sujeitas a atualização</footer>
         </section>
 
 
@@ -198,6 +140,7 @@
     <footer>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+    <script src="/previsao.js"></script>
 </body>
 </html>
