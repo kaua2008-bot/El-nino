@@ -36,10 +36,12 @@
     }
     .el-nino{
         background-color: #F6D1C5;
+        border: solid 1px #FF5722 ;
     }
     .titulo-el{
         background-color: #FF5722;
         padding: 5px 35px;
+    
         width: 100%;
     }
     
@@ -50,7 +52,7 @@
     
     .la-nina{
         background-color: #B0DAFF;
-        text-align: center;
+        border: solid 1px #006ECE;
     }
     .titulo-la{
         background-color: #0F4C81;
