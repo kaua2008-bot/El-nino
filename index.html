@@ -38,19 +38,18 @@
         </nav>
     </header>
 
-    <main>
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <div class="hero-container">
-                <h1><span style="color: white;">S.O.S</span> <span style="color: #FF5722;">EL NIÑO</span></h1>
-                <p><span style="color: white;">Informações e preparo para<br>enfrentar os impactos do<br>fenômeno</span></p>
-                <button class="hero_button"><span style=" color: white;">Ver detalhes</span></button>
-            </div>
-        </section>
-            
 
-        
-            
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-container">
+            <h1><span style="color: white;">S.O.S</span> <span style="color: #FF5722;">EL NIÑO</span></h1>
+            <p><span style="color: white;">Informações e preparo para<br>enfrentar os impactos do<br>fenômeno</span></p>
+            <button class="hero_button"><span style=" color: white;">Ver detalhes</span></button>
+        </div>
+    </section>
+
+
+    <main>
         <!-- SEÇÃO DE O QUE É -->
         <section>
             <div class="titulo-secoes">
@@ -118,8 +117,12 @@
         <!-- SEÇÃO DE PREVISÃO DO TEMPO -->
         <section class="container-previsao">
             <div class="topo">
-                <div><p class="eyebrow">MONITORAMENTO METEOROLÓGICO</p><h1>Clima em tempo real</h1><p class="subtitulo">Condições atuais e previsão para os próximos dias</p></div>
-                <form id="form-busca" class="busca"><label class="sr-only" for="cidade">Cidade</label><input id="cidade" name="cidade" placeholder="Digite uma cidade" value="Toledo" required minlength="2"><button type="submit">Pesquisar</button></form>
+                <div class="titulo-secoes">
+                    <button class="button-importante"></button>
+                    <h3>Clima em tempo real</h3>
+                </div>
+                <p>Confira as condições climáticas e o risco na sua região</p>
+                <form id="form-busca" class="busca"><label class="sr-only" for="cidade">Cidade</label><input id="cidade" name="cidade" placeholder="Digite uma cidade" value="🔍 Toledo" required minlength="2"><button class="btn-pesquisa-cidade" type="submit">Pesquisar</button></form>
             </div>
 
             <p id="status" class="status" role="status" aria-live="polite"></p>
@@ -135,35 +138,8 @@
 
 
         <!-- SEÇÃO DE EMERGÊNCIA -->
-        <section class="emergencia">
-            <div>
-                <!-- TÍTULO -->
-                <div class="titulo-secoes">
-                    <button class="button-importante"></button>
-                    <h3 id="emergencia">Contatos de emergência</h3>
-                </div>
-                <p>Em casos de emergência, entre em contato com os órgãos responsáveis.</p>
-                
-                <!-- DEFESA CIVIL -->
-                <div class="defcivil">
-                    <div class="titulo-defcivil">
-                        <img src="/imagens_usadas/" alt="escudo" class="escudo">
-                        <h2>DEFESA CIVIL</h2>
-                    </div>
-                    <h3><img src="/imagens_usadas/" alt="">199</h3>
-                    <button>Ligar agora</button>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-            </div>
+        <section>
+            
         </section>
     </main>
     <footer>
