@@ -23,3 +23,19 @@
         width: 200px;
     }
 }
+
+/* =================================================================== */
+/* CONTEÚDOS DA PARTE DO "O QUE É" + COMO FUNCIONA */
+/* =================================================================== */
+.informacoes-adicionais-o-que-e{
+    display: flex;
+    justify-content: center;
+}
+.como-funciona{
+    background-color: #9ECDDE;
+    margin: 10px;
+}
+.como-funciona img{
+    width: 20px;
+    align-items: center;
+}
