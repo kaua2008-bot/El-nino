@@ -6,6 +6,7 @@
 @import url("/paginas_de_estilos/previsao.css");
 @import url("/paginas_de_estilos/oQueESecao.css");
 @import url("/paginas_de_estilos/diferencasNinoNina.css");
+@import url(/paginas_de_estilos/emergencia.css);
 
 *{
     box-sizing: border-box;
