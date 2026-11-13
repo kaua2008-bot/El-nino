@@ -74,13 +74,10 @@ h2{
     text-align: center;
     font-family: "Inter", sans-serif;
     font-weight: 600;
-    
 }
 
 .botao_emergencia{
     text-align: center;
-    
-
 }
 
 .not_alerta{
@@ -91,4 +88,84 @@ h2{
     width: 50px;
     height: 50px;
     line-height: 1;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width:768px) {
+.hero-container{
+    background-image: url("/imagens_usadas/heroomar.jpg");  
+    height: calc(50vh - 100px);
+    background-size: cover; 
+    background-position: center;
+    display:flex;
+    justify-content: space-around;
+}  
+h1{
+    font-family: "Open Sans", sans-serif;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.paragrafo_1{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+.hero_button{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 150px;
+    height:40px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    top: 4px;
+    
+    font-style: bold;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
+.icone_seta{
+    align-items: center;
+    width: 20px;
+    height: 40px;
+    top: 6px;
+    left: 101px;
+    object-fit: contain;
+}
+
+
+/* Caixa de emergencia */
+.alerta_emergencia{
+    width: 150px;
+    height: 170px;
+    margin-top: 10px;
+}
+
+h2{
+    font-size: 14px;
+    text-align: center;
+}
+.paragrafo_2{
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.botao_emergencia{
+    text-align: center;
+    background-color: #FF5722;
+    margin-left: 20%;
+    border: none;
+}
+
+.not_alerta{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+}
 }

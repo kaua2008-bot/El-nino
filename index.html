@@ -6,6 +6,7 @@
     <title>SOS El Ninõ</title>
     <meta name="description" content="Avisos e orintações para a prevenção do El-ninõ">
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
 </head>
 <body>
        <!-- CABEÇALHO -->
@@ -41,12 +42,13 @@
         <!-- HERO SECTION -->
         <section class="hero">
             <div class="hero-container">
-                <h1><span style="color: white;">S.O.S</span> <span style="color: #FF5722;">EL NIÑO</span></h1>
+                <div>
+                    <h1><span style="color: white;">S.O.S</span> <span style="color: #FF5722;">EL NIÑO</span></h1>
                 <p class="paragrafo_1"><span style="color: white;">Informações e preparo para<br>enfrentar os impactos do<br>fenômeno.</span></p>
                 <button class="hero_button"><span style=" color: white;">Consultar</span>
-                    <img class="icone_seta" src="/imagens_usadas/flecha1.png">
-                
+                    <img class="icone_seta" src="/imagens_usadas/flecha2.png">
                 </button>
+                </div>
 
             <div class="alerta_emergencia">
                 <img class="not_alerta" src="/imagens_usadas/iconeAlerta.png">
@@ -54,112 +56,17 @@
                 <P class="paragrafo_2"><span style="color: white;">Chuvas intensas<br>previstas para as<br>próximas 24H em<br>regiões do sul.</span></P>
                 <button class="botao_emergencia">Ver detalhes</button>
             </div>
+                <div class="alerta_emergencia">
+                    <img class="not_alerta" src="/imagens_usadas/alertaHome.png">
+                    <h2><span style="color: white;">ALERTA DE EMERGÊNCIA</span></h2>
+                    <P class="paragrafo_2"><span style="color: white;">Chuvas intensas<br>previstas para as<br>próximas 24H em<br>regiões do sul.</span></P>
+                    <button class="botao_emergencia">Ver detalhes </button>
+                </div>
             </div>
         </section>
             
 
-        <section class="previsao-regiao">
-
-            <div class="container-previsao">
-
-                <!-- TÍTULO -->
-                <div class="titulo-previsao">
-                    <h1>Previsão da Sua Região</h1>
-                    <p>Confira as condições climáticas e o risco na sua região</p>
-                </div>
-
-                <!-- PESQUISA -->
-                <div class="pesquisa-regiao">
-                    <span class="lupa">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <circle cx="10.8" cy="10.8" r="8"
-                                stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M17 17L22 22"
-                                stroke="currentColor" stroke-width="1.5"/>
-                        </svg>
-                    </span>
-
-                    <input type="text" id="cidade"
-                        placeholder="Digite sua cidade ou estado...">
-
-                    <button id="buscarCidade">
-                        <svg viewBox="0 0 24 24" fill="none">
-                            <circle cx="10.8" cy="10.8" r="8"
-                                stroke="currentColor" stroke-width="1.5"/>
-                            <path d="M17 17L22 22"
-                                stroke="currentColor" stroke-width="1.5"/>
-                        </svg>
-                        Buscar
-                    </button>
-                </div>
-
-                <!-- PREVISÃO DO TEMPO -->
-                <div class="informacoes-clima">
-
-                    <div class="clima-principal">
-
-                        <svg class="icone-clima" viewBox="0 0 130 110" fill="none">
-                            <!-- Sol -->
-                            <circle cx="83" cy="30" r="17"
-                                stroke="currentColor" stroke-width="4"/>
-
-                            <path d="M83 5V0 M83 60V54 M58 30H52
-                            M113 30H107 M65 12L60 7 M101 12L106 7
-                            M101 48L106 53 M65 48L60 53"
-                                stroke="currentColor" stroke-width="4"
-                                stroke-linecap="round"/>
-
-                            <!-- Nuvem -->
-                            <path d="M23 82H108
-                            C120 82 125 73 125 64
-                            C125 54 117 46 107 46
-                            C105 28 90 18 75 21
-                            C64 23 57 31 54 39
-                            C39 32 24 41 23 55
-                            C12 57 7 65 7 72
-                            C7 78 13 82 23 82Z"
-                                stroke="currentColor" stroke-width="4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
-
-                            <!-- Raio -->
-                            <path d="M67 69L57 85H69L63 101"
-                                stroke="currentColor" stroke-width="4"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"/>
-                        </svg>
-
-                        <div class="temperatura">
-                            <h2>28°C</h2>
-                            <p>parcialmente nublado</p>
-                        </div>
-
-                    </div>
-
-                    <div class="detalhes-clima">
-                        <p class="chuva">💧 Chuva<br>12 mm</p>
-                        <p>sensação térmica</p>
-                    </div>
-
-                </div>
-
-                <!-- INDICADOR DE RISCO -->
-                <div class="indicador-risco">
-                    <div class="barra-risco"></div>
-
-                    <div class="marcador-risco">
-                        <svg viewBox="0 0 40 40">
-                            <path d="M3 3L20 13L37 3L20 38Z"
-                                fill="black"/>
-                        </svg>
-                    </div>
-                </div>
-
-        <section>
-
-        </section>    
-                
-            
+        
         <!-- SEÇÃO DE O QUE É -->
         <section>
             <div class="titulo-secoes">
@@ -225,82 +132,34 @@
 
 
         <!-- SEÇÃO DE PREVISÃO DO TEMPO -->
-        <section class="previsao-regiao">
-            <div>
-                <!-- TÍTULO -->
-                <div class="titulo-secoes">
-                    <button class="button-importante"></button>
-                    <h3 id="previsao">Previsão da Sua Região</h3>
-                </div>
-                <p>Confira as condições climáticas e o risco na sua região</p>
-
-                <!-- PESQUISA -->
-                <div class="pesquisa-regiao">
-                    <span><img class="lupa" src="/imagens_usadas/lupaDePesquisaCinza.png"></span>
-
-                    <input type="text" id="cidade"
-                        placeholder="Digite sua cidade ou estado...">
-
-                    <button id="buscarCidade"><img class="lupa" src="/imagens_usadas/lupaDePesquisa.png">Buscar</button>
-                </div>
-
-                <!-- PREVISÃO DO TEMPO -->
-                <div class="informacoes-clima">
-                    <div class="clima-principal">
-                        <img src="/imagens_usadas/climaInformação.png" class="icone-clima">
-
-                        <div class="temperatura">
-                            <h2>28°C</h2>
-                            <p>parcialmente nublado</p>
-                        </div>
-                    </div>
-
-                    <div class="detalhes-clima">
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/climaPrevenaoHome.png"> Chuva 12 mm</p>
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/temperaturaPrevencaoHome.png"> Sensação térmica</p>
-                        <p><img class="detalhes-previsao" src="/imagens_usadas/ventoPrevencaoHome.png"> Vento</p>
-                    </div>
-
-                </div>
-
-                <!-- INDICADOR DE RISCO -->
-                <div class="indicador-risco">
-                    <div class="barra-risco"></div>
-
-                    <div class="marcador-risco">
-                        <img src="/imagens_usadas/_➤.png">
-                    </div>
-                </div>
-
-                <!-- CARDS DE RISCO -->
-                <div class="titulo-secoes">
-                    <button class="button-importante"></button>
-                    <h3 id="o-que-e">Guias de Prevenção</h3>
-                </div>
-                <div class="cards-risco">
-                    <div class="card-risco card-incendio">
-                        <div class="card-aviso-risco">
-                            <img class="img-aviso" src="/imagens_usadas/casaSecaHome.png">
-                            <h3>Guia de Prevenção para Secas</h3>
-                        </div>
-                        <p>Dicas para encontrar água e se preparar</p>
-                        <button class="saiba-mais-aviso seca" href="#">Saiba Mais →</button>
-                    </div>
-                    <div class="card-risco card-enchente">
-                        <div class="card-aviso-risco">
-                            <img class="img-aviso" src="/imagens_usadas/casaEnxenteHome.png">
-                            <h3>Guia de Prevenção para Enchentes</h3>
-                        </div>
-                        <p>Dicas para encontrar água e se preparar</p>
-                        <button class="saiba-mais-aviso enchente" href="#">Saiba Mais →</button>
-                    </div>
-
-                </div>
-
-            </div>
-
+        <section class="container">
+            <header class="cabecalho">
+              <div><p class="sobretitulo">Open-Meteo + OpenStreetMap</p><h1>☀️ Painel Meteorológico 3º DS</h1><p>Consulte o clima por cidade, bairro ou rua no Brasil.</p></div>
+            <div><p class="sobretitulo"></p><h1>Trabalho Técnico de final de Trimestre</h1>
+            </header>
+            
+            <form id="form-busca" class="busca">
+              <label for="cidade">Localização</label>
+              <div class="busca-linha"><input id="cidade" type="search" placeholder="Ex.: Centro, Toledo, Paraná" required minlength="2" autocomplete="street-address"><button type="submit" id="buscar">Pesquisar</button><button type="button" id="atualizar" disabled>Atualizar</button></div>
+              <small>Para melhorar a busca, informe bairro ou rua, cidade e estado.</small>
+            </form>
+            <p id="status" role="status" aria-live="polite">Digite um local para consultar a previsão.</p>
+            <section id="painel" hidden>
+                <div class="titulo-local"><div><h2 id="nome-local"></h2><p id="data-atualizacao"></p></div><span id="condicao-atual" class="condicao"></span></div>
+              <section aria-label="Condições atuais" class="grade-cards">
+                <article class="card destaque"><h3>🌡️ Temperatura atual</h3><div class="valor" id="temperatura">—</div><p id="sensacao">Sensação: —</p></article>
+                <article class="card"><h3>💧 Umidade</h3><div class="valor" id="umidade">—</div><p>Umidade relativa do ar</p></article>
+                <article class="card"><h3>🌬️ Vento</h3><div class="valor" id="vento">—</div><p id="rajadas">Rajadas: —</p></article>
+                <article class="card"><h3>🌧️ Chance de chuva hoje</h3><div class="valor" id="chance-chuva">—</div><p id="chuva-acumulada">Precipitação prevista: —</p></article>
+                <article class="card"><h3>☀️ Índice UV máximo hoje</h3><div class="valor" id="uv">—</div><p id="uv-classificacao">—</p></article>
+                <article class="card"><h3>🌅 Sol</h3><div class="valor menor" id="nascer-sol">—</div><p id="por-sol">Pôr do sol: —</p></article>
+              </section>
+              <section class="secao" aria-labelledby="titulo-avisos"><h2 id="titulo-avisos">⚠️ Avisos baseados na previsão</h2><div id="avisos" class="lista-avisos"></div><p class="nota">Avisos indicativos gerados por regras locais. Não são alertas oficiais. Consulte <a href="https://alertas2.inmet.gov.br/" target="_blank" rel="noopener noreferrer">os avisos oficiais do INMET</a>.</p></section>
+              <section class="secao" aria-labelledby="titulo-grafico"><h2 id="titulo-grafico">📈 Temperatura e chance de chuva — próximas 24 horas</h2><div class="grafico-wrapper"><canvas id="grafico-temperatura" role="img" aria-label="Gráfico de temperatura e probabilidade de chuva nas próximas 24 horas"></canvas></div></section>
+              <section class="secao" aria-labelledby="titulo-dias"><h2 id="titulo-dias">🗓️ Previsão para 7 dias</h2><div id="previsao-dias" class="grade-dias"></div></section>
+              <footer>Dados meteorológicos: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Geocodificação: <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>/Nominatim. Previsões são estimativas por coordenadas, não medições em cada rua.</footer>
+            </section>
         </section>
-
 
         <!-- SEÇÃO DE EMERGÊNCIA -->
         <section>
@@ -310,6 +169,7 @@
     <footer>
 
     </footer>
-    <script src="script.js"></script>
+    <script src="/script.js"></script>
+    <script src="/previsao.js"></script>
 </body>
 </html>
