@@ -13,6 +13,9 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+main{
+    margin: 0 10px;
+}
 
 /* CORES */
 :root{
