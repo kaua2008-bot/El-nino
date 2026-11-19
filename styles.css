@@ -13,9 +13,6 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-main{
-    margin: 0 10px;
-}
 
 /* CORES */
 :root{
@@ -39,15 +36,38 @@ main{
 /* TÍTULOS GERAIS */
 /* =================================================================== */
 
+
+.container-secoes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.container-secoes main{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-secao {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
 .titulo-secoes{
     display: flex;
-    padding: 10px;
     font-size: 24px;
-    margin-left: 5px;
 }
 
 .button-importante{
     margin: 0 10px 0 0;
     border: none;
     background-color: var(--cor-primaria-importante);
+}
+
+@media (max-width:768px) {
 }

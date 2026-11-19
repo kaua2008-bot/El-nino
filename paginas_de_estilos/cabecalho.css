@@ -4,11 +4,19 @@
 .cabecalho {
     display: flex;
     width: 100%;
+    justify-content: center;
+    
     background-color: var(--cor-primaria-azul-fundo);
+}
+
+.container-cabecalho {
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 30px;
+    width: 100%;
+    max-width: 1200px;
 }
+
 .lista {
     display: flex;
     align-items: center;
