@@ -59,8 +59,13 @@
 }
 
 .titulo-secoes{
-    display: flex;
     font-size: 24px;
+}
+
+.titulo-secao-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .button-importante{
@@ -70,4 +75,7 @@
 }
 
 @media (max-width:768px) {
+    .titulo-secoes{
+        padding: 5%;
+    }
 }
