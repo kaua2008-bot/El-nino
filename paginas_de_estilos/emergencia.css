@@ -14,6 +14,7 @@
     width: 286px;
     height: 136px;
     display: flex;
+    align-items: center;
 }
 
 .emergencia-titulo {
@@ -50,4 +51,10 @@
 .emergenciaCenter{
     justify-content: center;
     margin: 0 auto;
+}
+
+.emergencia-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 97px;
 }
