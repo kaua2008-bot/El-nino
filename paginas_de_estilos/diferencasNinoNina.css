@@ -1,14 +1,19 @@
 .diferencas-nino-nina{
-    display:flex ;
-    justify-content: space-around;
-    gap: 15px;
+    display:flex;
+    justify-content: space-between;
+    max-width: 990px;
+    margin-left: 15.5%;
 }
 .el-nino{
     background-color: #F6D1C5;
     text-align: center;
+    min-width: 400px;
+    max-width: 400px;
+    font-size: large;
 }
 .titulo-el{
     background-color: #FF5722;
+    color: white;
     padding: 5px 40px;
     width: 100%;
 }
@@ -21,27 +26,32 @@
 .la-nina{
     background-color: #B0DAFF;
     text-align: center;
+    min-width: 400px;
+    max-width: 400px;
+    font-size: large;
 }
 .titulo-la{
     background-color: #0F4C81;
     padding: 5px 40px;
     width: 100%;
+    color: white;
 }
 
 @media (max-width:768px) {
     .diferencas-nino-nina{
-        display:flex ;
-        justify-content: space-around;
+        display:block ;
         margin: 10px;
     }
     .el-nino{
         background-color: #F6D1C5;
         border: solid 1px #FF5722 ;
+        margin: 10px 5%;
+        min-width: 300px;
+        max-width: 300px;
     }
     .titulo-el{
         background-color: #FF5722;
         padding: 5px 35px;
-    
         width: 100%;
     }
     
@@ -53,6 +63,9 @@
     .la-nina{
         background-color: #B0DAFF;
         border: solid 1px #006ECE;
+        margin: 10px 5%;
+        min-width: 300px;
+        max-width: 300px;
     }
     .titulo-la{
         background-color: #0F4C81;
