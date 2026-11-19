@@ -8,8 +8,19 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 .defCivil{
-    background-color: black;
+    background-color: #edeef8;
+    border-radius: 40px;
+    justify-content: ;
 }
-.defCivil-titulo{
-    width: 70px;
+.emergencia-titulo{
+    width: 140px;
+}
+.imgEmergencia{
+    width: 67px;
+}
+.imgTelefone{
+    width: 41px;
+}
+.foneEmergencia{
+    display: flex;
 }
