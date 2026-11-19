@@ -1,8 +1,10 @@
 .diferencas-nino-nina{
-    display:flex;
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 1000px;
+    margin: 5%;
     justify-content: space-between;
-    max-width: 990px;
-    margin-left: 15.5%;
+    font-size: large;
 }
 .el-nino{
     background-color: #F6D1C5;
@@ -39,8 +41,9 @@
 
 @media (max-width:768px) {
     .diferencas-nino-nina{
-        display:block ;
-        margin: 10px;
+        flex-direction: column !important;
+        max-width: 500px;
+        margin: 5%;
     }
     .el-nino{
         background-color: #F6D1C5;
@@ -51,12 +54,11 @@
     }
     .titulo-el{
         background-color: #FF5722;
-        padding: 5px 35px;
+        padding: 5%;
         width: 100%;
     }
     
     .texto-diferenciais{
-        padding-left: 5px;
         padding: 10px;
     }
     
@@ -69,7 +71,7 @@
     }
     .titulo-la{
         background-color: #0F4C81;
-        padding: 5px 30px;
+        padding: 5%;;
         width: 100%;
     }
 }
