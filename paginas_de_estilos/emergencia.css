@@ -7,19 +7,47 @@
     padding: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.defCivil{
+
+.emergencia-container {
     background-color: #edeef8;
     border-radius: 40px;
+    width: 286px;
+    height: 136px;
+    display: flex;
 }
-.emergencia-titulo{
+
+.emergencia-titulo {
     width: 140px;
+    margin: 0 auto;
 }
-.imgEmergencia{
+
+.imgEmergencia {
     width: 67px;
+    display: flex;
+    object-fit: contain;
 }
-.imgTelefone{
+
+.imgTelefone {
     width: 41px;
 }
-.foneEmergencia{
+
+.foneEmergencia {
     display: flex;
+}
+
+.btnLigar {
+    background-color: #ff5722;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 22px;
+    border: none;
+}
+
+.btnLigar-azul {
+    background-color: #1c60b9;
+}
+
+.emergenciaCenter{
+    justify-content: center;
+    margin: 0 auto;
 }
