@@ -7,6 +7,7 @@
 @import url("/paginas_de_estilos/oQueESecao.css");
 @import url("/paginas_de_estilos/diferencasNinoNina.css");
 @import url(/paginas_de_estilos/emergencia.css);
+@import url(/paginas_de_estilos/duvidas.css);
 
 *{
     box-sizing: border-box;
