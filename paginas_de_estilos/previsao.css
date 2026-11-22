@@ -1,7 +1,6 @@
 /* ========================================================================== */
    /* PREVISÃO DA REGIÃO */
 /* ========================================================================== */
-
 .previsao{
     max-width:1200px;
     font:16px/1.5 system-ui,Arial,sans-serif;
@@ -43,19 +42,12 @@
     min-height:24px;
     color: #003087;
 }
-.titulo-local{
-    display:flex;
-    justify-content:space-between;
-    gap:15px;
-    align-items:center;
-    flex-wrap:wrap;
-}
-
 
 
 .titulo-local{
     display:flex;
     justify-content:space-between;
+    gap: 5%;
     align-items:center;
     flex-wrap:wrap;
 }
@@ -66,7 +58,9 @@
     font-weight:700;
     color:#003087;
 }
-
+.titulo-previsao-clima{
+    padding: 5% 0 2% ;
+}
 
 
 .grade-cards {
@@ -84,7 +78,7 @@
 .card, .destaque{
     background: none;
     border: solid 0.5px #002f879d;
-    box-shadow: 5px 1px 1px  #1020379d;
+    box-shadow: -5px 1px 1px  #1020379d;
 }
 .card h3{
     font-size:18px;
@@ -113,7 +107,6 @@
 }
 
 
-
 .aviso{
     border-radius:10px;
     padding:12px 14px;
@@ -121,24 +114,21 @@
     background:#1d3148
 }
 .aviso.atencao{
-    border-color:#f6c65b;
-    background:#e4ec04;
-    color:#070707;
+    border-color:#d76e06;
+    background:#ffc422;
+    color: #444343;
 }
 .aviso.elevado{
-    border-color:#ff8a82;
-    background:#402328
+    border-color: #FF5722;
+    background:#bc2c00;
+    color: white;
 }
 .aviso p{
-    margin:4px 0 0
+    margin:4px 0 0;
 }
 .nota{
     font-size:.82rem;
-    margin-bottom:0
-}
-.grafico-wrapper{
-    position:relative;
-    height:330px
+    margin-bottom:0;
 }
 
 
@@ -151,8 +141,8 @@
 .dia{
     padding:15px;
     border: solid 0.5px #002f879d;
-    box-shadow: 5px 1px 1px  #1020379d;
-    border-radius:12px
+    box-shadow: -5px 1px 1px  #1020379d;
+    border-radius:12px;
 }
 .dia h3{
     margin:0 0 9px;
@@ -172,11 +162,91 @@
 a{
     color:#9bd3ff
 }
-footer{
-    font-size:.8rem;
-    margin-top:22px
+.dados-meteorologicos{
+    font-size: 0.8rem;
+    color: #B6AEAE;
 }
-@media(max-width:500px){
+
+/* =================================================================== */
+/* RESPONSIVIDADE MOBILE */
+/* =================================================================== */
+@media (max-width:1200px) {
+    .container{
+        padding:16px 12px;
+    }
+    .busca,.secao{
+        padding: 5%;
+    }
+    .busca button{
+        flex:1;
+        padding:10px 10px;
+        font-size: small;
+    }
+    .titulo-local p{
+        padding: 5%;
+    }
+    #status{
+        min-height:24px;
+        padding: 5%;
+        color: #003087;
+    }
+    .grade-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        padding: 5%;
+    }
+    .card{
+        padding:20px;
+        border-radius:14px;
+    }
+    .card h3{
+        font-size:16px;
+        margin:0 0 12px;
+        color:#003087;
+    }
+    .nome-local{
+        padding-left: 5%;
+    }
+    .titulo-local{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .titulo-previsao-clima{
+        padding: 5%;
+    }
+    .dados-meteorologicos{
+        font-size: 0.8rem;
+        color: #B6AEAE;
+        padding: 5%;
+    }
+    .grade-dias{
+        grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+    }
+    .dia{
+        padding:10px;
+    }
+    .dia h3{
+        font-size:14px;
+    }
+    .dia .icone{
+        font-size:20px;
+    }
+    .dia p{
+        font-size:14px;
+    }
+    .dia .temp{
+        font-size:12px;
+        font-weight:700;
+    }
+}
+
+
+/* =================================================================== */
+/* RESPONSIVIDADE MOBILE */
+/* =================================================================== */
+@media(max-width:768px){
     .container{
         padding:16px 12px
     }.busca,.secao{
@@ -213,5 +283,20 @@ footer{
         margin:0 0 12px;
         color:#003087;
     }
-    
+    .nome-local{
+        padding-left: 5%;
+    }
+    .titulo-local{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .titulo-previsao-clima{
+        padding: 5%;
+    }
+    .dados-meteorologicos{
+        font-size: 0.8rem;
+        color: #B6AEAE;
+        padding: 5%;
+    }
 } 
