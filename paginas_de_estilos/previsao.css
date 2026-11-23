@@ -119,8 +119,8 @@
     color: #444343;
 }
 .aviso.elevado{
-    border-color: #FF5722;
-    background:#bc2c00;
+    background-color: #FF5722;
+    border-color:#bc2c00;
     color: white;
 }
 .aviso p{
