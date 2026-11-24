@@ -2,15 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@import url("/paginas_de_estilos/cabecalho.css");
-@import url("/paginas_de_estilos/heroSection.css");
-@import url("/paginas_de_estilos/oQueESecao.css");
-@import url("/paginas_de_estilos/previsao.css");
-@import url("/paginas_de_estilos/oQueESecao.css");
-@import url("/paginas_de_estilos/diferencasNinoNina.css");
-@import url("/paginas_de_estilos/emergencia.css");
-@import url("/paginas_de_estilos/duvidas.css");
-@import url("/paginas_de_estilos/resumoNoticias.css");
 
 *{
     box-sizing: border-box;
