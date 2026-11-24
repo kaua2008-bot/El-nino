@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOS El Niño</title>
     <meta name="description" content="Avisos e orintações para a prevenção do El-ninõ">
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js" defer></script>
 </head>
 <body>
@@ -39,69 +39,17 @@
     </header>
 
     <!-- HERO SECTION -->
-  <!-- Importando fontes do Google Fonts semelhantes às da imagem -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-
-  <section class="hero-section">
-    <div class="hero-container">
-      
-      <!-- Lado Esquerdo: Título, Descrição e Botão -->
-      <div class="hero-left">
-        <h1 class="hero-title">
-          <span class="text-white">S.O.S</span> <span class="text-orange">EL NIÑO</span>
-        </h1>
-        <p class="hero-subtitle">
-          Informação e preparo para<br>
-          enfrentar os impactos do<br>
-          fenômeno.
-        </p>
-        <a href="#consultar" class="btn-consultar">
-          <span>Consultar</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Lado Direito: Card de Alerta de Emergência -->
-      <div class="hero-right">
-        <div class="alert-card">
-          <!-- Ícone de Triângulo de Alerta -->
-          <div class="alert-icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="#FFFFFF">
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-              <line x1="12" y1="9" x2="12" y2="13" stroke="#E53935" stroke-width="2.2" stroke-linecap="round"/>
-              <circle cx="12" cy="17" r="1.2" fill="#E53935"/>
-            </svg>
-          </div>
-          
-          <h2 class="alert-title">
-            ALERTA DE<br>
-            EMERGÊNCIA
-          </h2>
-          
-          <p class="alert-text">
-            Chuvas intensas previstas para<br>
-            as próximas 24H em<br>
-            regiões do sul.
-          </p>
-          
-          <a href="#detalhes" class="btn-detalhes">
-            <span>Ver Detalhes</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-    </div>
-  </section>
+    <section class="hero">
+        <div class="hero-container">
+            <div>
+                <h1><span style="color: white;">S.O.S</span> <span style="color: #FF5722;">EL NIÑO</span></h1>
+            <p class="paragrafo_1"><span style="color: white;">Informações e preparo para<br>enfrentar os impactos do<br>fenômeno.</span></p>
+            <button class="hero_button"><span style=" color: white;">Consultar</span>
+                <img class="icone_seta" src="/imagens_usadas/flecha2.png">
+            </button>
+            </div>
+            </div>
+    </section>
 
     <div class="container-secoes">
         <main>
@@ -112,14 +60,41 @@
                         <h3>Resumo de Notícias</h3>
                     </div>
                 </div>
+                <!-- CENTRO SUL -->
                 <div class="resumo-noticias-topo">
                     <div class="noticias">
                         <img src="/imagens_usadas/imagem_seca.png">
-                        <p>Secas prolongada preocupa produtores rurais</p>
+                        <p style="font-weight: bold;">Secas prolongada preocupa produtores rurais</p>
                     </div>
                     <div class="reportagem">
-                        <p>Centro-Oeste</p>
+                        <p class="tag-regiao">Centro-Oeste</p>
                         <p>A possibilidade de secas prolongadas causadas pelo El Niño preocupa produtores do Centro-Oeste. A falta de chuva pode prejudicar plantações, pastagens e reduzir a produção agrícola, causando prejuízos aos agricultores.</p>
+                        <p><a>Leia a matéria completa →</a></p>
+                    </div>
+                </div>
+                
+                <!-- SUL -->
+                <div class="resumo-noticias-topo">
+                    <div class="noticias">
+                        <img src="/imagens_usadas/enchentes no sul.png">
+                        <p style="font-weight: bold;">Chuvas causam alagamentos em cidades da região</p>
+                    </div>
+                    <div class="reportagem">
+                        <p class="tag-regiao">Sul</p>
+                        <p>As fortes chuvas provocadas pela influência do El Niño causaram alagamentos em cidades do Sul do Brasil, deixando famílias desabrigadas e provocando prejuízos. A Defesa Civil está trabalhando para ajudar os moradores afetados.</p>
+                        <p><a>Leia a matéria completa →</a></p>
+                    </div>
+                </div>
+
+                <!-- SUDOESTE -->
+                <div class="resumo-noticias-topo">
+                    <div class="noticias">
+                        <img src="/imagens_usadas/tempestade sudeste.png">
+                        <p style="font-weight: bold;">Secas prolongada preocupa produtores rurais</p>
+                    </div>
+                    <div class="reportagem">
+                        <p class="tag-regiao">Sudoeste</p>
+                        <p> A Defesa Civil emitiu alerta para tempestades na Região Sudeste, com previsão de chuvas fortes, ventos intensos e possibilidade de granizo. O El Niño pode intensificar os eventos climáticos, aumentando os riscos de alagamentos e deslizamentos. A população deve ficar atenta aos avisos e evitar áreas de risco.</p>
                         <p><a>Leia a matéria completa →</a></p>
                     </div>
                 </div>
