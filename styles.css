@@ -1,14 +1,7 @@
 /* importes para outras páginas de estilo para facilitar a legibilidade desse css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-@import url("/paginas_de_estilos/cabecalho.css");
-@import url("/paginas_de_estilos/heroSection.css");
-@import url("/paginas_de_estilos/oQueESecao.css");
-@import url("/paginas_de_estilos/previsao.css");
-@import url("/paginas_de_estilos/oQueESecao.css");
-@import url("/paginas_de_estilos/diferencasNinoNina.css");
-@import url("/paginas_de_estilos/emergencia.css");
-@import url("/paginas_de_estilos/duvidas.css");
-@import url("/paginas_de_estilos/resumoNoticias.css");
 
 *{
     box-sizing: border-box;
@@ -42,46 +35,947 @@
     width: 100%;
     justify-content: center;
 }
-
 .container-secoes main{
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
     flex-direction: column;
     justify-content: center;
 }
-
 .container-secao {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
 .titulo-secoes{
     font-size: 24px;
 }
-
 .titulo-secao-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
-
 .button-importante{
     margin: 0 10px 0 0;
     border: none;
     background-color: var(--cor-primaria-importante);
 }
 
-@media (max-width: 1200px) {
+/* =================================================================== */
+/* MENU + CABEÇALHO */
+/* =================================================================== */
+.cabecalho {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--cor-primaria-azul-fundo);
+}
+.container-cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+.lista {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 35px; 
+    padding: 0;
+    margin: 0;
+}
+.btnhead {
+    text-decoration: none;
+    border-radius: 36px;
+    padding: 10px 18px;
+    transition: background-color 0.3s ease;
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botoes {
+    border-radius: 36px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.btn-menu {
+    color: var(--cor-primaria-inicio);
+    background-color: transparent;
+}
+.btn-menu:hover {
+    background-color: var(--cor-menu-hover);
+}
+.btn-login {
+    background-color: var(--cor-primaria-inicio);
+    border: none;
+    color: var(--cor-primaria-azul-fundo);
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+.btn-login:hover {
+    background-color: #8bb5f1;
+    color: var(--cor-primaria-azul-fundo);
+}
+
+
+/* Botão Hambúrguer (Escondido no Desktop) */
+.menu-hamburguer {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+.menu-hamburguer .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* =================================================================== */
+/* APOIO PARA BUSCA */
+/* =================================================================== */
+.apoio-busca{
+    margin: 30px 0 ;
+    background-color: #CEEFFB;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.apoio-busca img{
+    width: 40px;
+    padding-right: 5px;
+}
+.btn-apoio-busca{
+    background-color:#003087;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+/* =================================================================== */
+/* DIFERENCIAIS NIÑO E NIÑA */
+/* =================================================================== */
+.diferencas-nino-nina{
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 1000px;
+    margin: 5%;
+    justify-content: space-between;
+    font-size: large;
+}
+.el-nino{
+    background-color: #F6D1C5;
+    text-align: center;
+    min-width: 400px;
+    max-width: 400px;
+    font-size: large;
+}
+.titulo-el{
+    background-color: #FF5722;
+    color: white;
+    padding: 5px 40px;
+    width: 100%;
+}
+.texto-diferenciais{
+    text-align: center;
+    padding: 50px;
+}
+.la-nina{
+    background-color: #B0DAFF;
+    text-align: center;
+    min-width: 400px;
+    max-width: 400px;
+    font-size: large;
+}
+.titulo-la{
+    background-color: #0F4C81;
+    padding: 5px 40px;
+    width: 100%;
+    color: white;
+}
+
+/* ================================================================================= */
+/* CONTATOS DE EMERGÊNCIA */
+/* ================================================================================= */
+.emergencia {
+    width: 100%;
+    min-height: 590px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.emergencia-container {
+    background-color: #edeef8;
+    border-radius: 40px;
+    width: 230px;
+    height: 136px;
+    display: flex;
+    align-items: center;
+}
+.emergencia-titulo {
+    width: 140px;
+    margin: 0 auto;
+}
+.imgEmergencia {
+    width: 67px;
+    display: flex;
+    object-fit: contain;
+}
+.imgTelefone {
+    width: 41px;
+}
+.foneEmergencia {
+    display: flex;
+}
+.btnLigar {
+    background-color: #ff5722;
+    color: #ffffff;
+    border-radius: 11px;
+    font-size: 22px;
+    border: none;
+}
+.btnLigar-azul {
+    background-color: #1c60b9;
+}
+.emergenciaCenter{
+    justify-content: center;
+    margin: 0 auto;
+}
+.emergencia-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 80px;
+    width: 100%;
+}
+
+/* =================================================================== */
+/* HERO SECTION */
+/* =================================================================== */
+.hero-section {
+    width: 100%;
+    min-height: 360px;
+    /* Substitua 'fundo-mar.jpg' pelo caminho correto da sua imagem */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.18)), url('/imagens_usadas/heroomar.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 24px;
+  }
+  
+  .hero-container {
+    width: 100%;
+    max-width: 1180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+  }
+  
+  /* --- COLUNA ESQUERDA --- */
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .hero-title {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(3.5rem, 6vw, 5.2rem);
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .text-white {
+    color: #FFFFFF;
+  }
+  
+  .text-orange {
+    color: #FF5714;
+  }
+  
+  .hero-subtitle {
+    color: #FFFFFF;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 22px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.45);
+  }
+  
+  .btn-consultar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #FF5714;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 700;
+    padding: 10px 22px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .btn-consultar:hover {
+    background-color: #e64a0d;
+    transform: translateY(-1px);
+  }
+  
+  /* --- COLUNA DIREITA (CARD DE ALERTA) --- */
+  .hero-right {
+    margin-right: 4%;
+  }
+  
+  .alert-card {
+    background-color: #E33B3B;
+    width: 280px;
+    padding: 24px 22px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  }
+  
+  .alert-icon {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .alert-title {
+    font-size: 1.35rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+  }
+  
+  .alert-text {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #FDECEC;
+    margin-bottom: 20px;
+  }
+  
+  .btn-detalhes {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: #FF5714;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+  }
+  
+  .btn-detalhes:hover {
+    background-color: #e64a0d;
+    transform: translateY(-1px);
+  }
+  
+
+/* =================================================================== */
+/* CONTEÚDOS DA PARTE DO "O QUE É" */
+/* =================================================================== */
+.conteudo-o-que-e{
+    display: flex;
+    align-items: center;
+}
+.img-o-que-e{
+    width: 300px;
+}
+
+/* =================================================================== */
+/* CONTEÚDOS DA PARTE DO "O QUE É" + COMO FUNCIONA */
+/* =================================================================== */
+.informacoes-adicionais-o-que-e{
+    display: flex !important;
+    flex-direction: row !important;
+    max-width: 1000px;
+    margin: 5%;
+    justify-content: space-between;
+    font-size: large;
+}
+.como-funciona h3{
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+.como-funciona{
+    background-color: #CEEFFB;
+    margin: 10px;
+    padding: 10px 20px;
+    min-width: 400px;
+    max-width: 400px;
+}
+.termometro{
+    width: 20px;
+}
+
+/* ========================================================================== */
+/* PREVISÃO DA REGIÃO */
+/* ========================================================================== */
+.previsao{
+    max-width:1200px;
+    font:16px/1.5 system-ui,Arial,sans-serif;
+    min-height:100vh;
+    gap: 20px;
+}
+.busca{
+    padding:20px;
+}
+.busca-linha{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap
+}
+.busca input{
+    flex:1;
+    min-width:180px;
+    padding: 12px;
+    border-radius:35px;
+
+    border: solid 2px #003087;
+    font:inherit;
+}
+.busca button{
+    padding:11px 70px;
+    font-size: x-large;
+    border:0;
+    border-radius:35px;
+    background: #003087;
+    color: white;
+    font-weight:600;
+    cursor:pointer
+}
+.busca button:disabled{
+    opacity:.45;
+    cursor:default
+}
+#status{
+    min-height:24px;
+    color: #003087;
+}
+
+.titulo-local{
+    display:flex;
+    justify-content:space-between;
+    gap: 5%;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.titulo-local p{
+    color: #B6AEAE;
+}
+.condicao{
+    font-weight:700;
+    color:#003087;
+}
+.titulo-previsao-clima{
+    padding: 5% 0 2% ;
+}
+
+.grade-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0 14px;
+}
+.card{
+    padding:15px;
+    border-radius:15px;
+    background-color: none;
+    border: none;
+    align-items: center;
+}
+.card, .destaque{
+    background: none;
+    border: solid 0.5px #002f879d;
+    box-shadow: -5px 1px 1px  #1020379d;
+}
+.card h3{
+    font-size:18px;
+    margin:0 0 12px;
+    color:#003087;
+}
+.valor{
+    font-size:2.25rem;
+    line-height:1.2;
+    font-weight:750;
+}
+.menor{
+    font-size:1.65rem;
+}
+.card p{
+    margin:10px 0 0;
+    font-size:.88rem;
+}
+.secao h2{
+    font-size:1.2rem;
+    margin:0 0 15px;
+}
+.lista-avisos{
+    display:grid;
+    gap:10px;
+}
+
+.aviso{
+    border-radius:10px;
+    padding:12px 14px;
+    border-left:4px solid #7ea8c7;
+    background:#1d3148
+}
+.aviso.atencao{
+    border-color:#d76e06;
+    background:#ffc422;
+    color: #444343;
+}
+.aviso.elevado{
+    background-color: #FF5722;
+    border-color:#bc2c00;
+    color: white;
+}
+.aviso p{
+    margin:4px 0 0;
+}
+.nota{
+    font-size:.82rem;
+    margin-bottom:0;
+}
+
+.grade-dias{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(145px,1fr));
+    gap:11px;
+}
+.dia{
+    padding:15px;
+    border: solid 0.5px #002f879d;
+    box-shadow: -5px 1px 1px  #1020379d;
+    border-radius:12px;
+}
+.dia h3{
+    margin:0 0 9px;
+    font-size:1rem
+}
+.dia .icone{
+    font-size:2rem
+}
+.dia p{
+    margin:6px 0;
+    font-size:.85rem;
+}
+.dia .temp{
+    font-size:1.13rem;
+    font-weight:700;
+}
+a{
+    color:#9bd3ff
+}
+.dados-meteorologicos{
+    font-size: 0.8rem;
+    color: #B6AEAE;
+}
+
+/* =================================================================== */
+/* RESUMO NOTÍCIAS */
+/* =================================================================== */
+.resumo-noticias-topo{
+    display: flex;
+    gap: 30px;
+    padding-top: 15px;
+}
+.reportagem{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tag-regiao{
+    background-color: #FF5722;
+    padding: 5px 15px;
+    width: 15%;
+    color: white;
+}
+.noticias img{
+    width: 300px;
+    border-radius: 16px;
+}
+
+/* =================================================================== */
+/* SEÇÃO NOTÍCIAS DA REGIÃO */
+/* =================================================================== */
+.texto-noticias{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.btn-regiao-not{
+    background-color: #003087;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+/* =================================================================== */
+/* SEÇÃO DÚVIDAS E SUGESTÕES */
+/* =================================================================== */
+
+
+/* =================================================================== */
+/* RESPONSIVIDADE NOTEBOOK */
+/* =================================================================== */
+@media  (max-width:1200px){
     .container-secoes main{
         max-width: 800px;
     }
+    /* =================================================================== */
+    /* MENU + CABEÇALHO */
+    /* =================================================================== */
+    .container-cabecalho {
+        max-width: 800px;
+    }
+
+    /* =================================================================== */
+    /* SEÇÃO DE HERO SECTION */
+    /* =================================================================== */
+    .hero-container{
+        height: calc(60vh - 134px);
+    }
+    .hero-container h1{
+        font-size: 100px;
+    }
+    .paragrafo_1{
+        font-size: 20px;
+    }
+
+    /* =================================================================== */
+    /* DIFERENCIAIS NIÑO E NIÑA */
+    /* =================================================================== */
+
+    
+    /* =================================================================== */
+    /* CONTATOS DE EMERGÊNCIA */
+    /* =================================================================== */
+
+
+    /* =================================================================== */
+    /* CONTEÚDOS DA PARTE DO "O QUE É" */
+    /* =================================================================== */
+
+
+    /* =================================================================== */
+    /* CONTEÚDOS DA PARTE DO "O QUE É" + COMO FUNCIONA */
+    /* =================================================================== */
+
+
+    /* =================================================================== */
+    /* PREVISÃO DA REGIÃO */
+    /* =================================================================== */
+    .container{
+        padding:16px 12px;
+    }
+    .busca,.secao{
+        padding: 5%;
+    }
+    .busca button{
+        flex:1;
+        padding:10px 10px;
+        font-size: small;
+    }
+    .titulo-local p{
+        padding: 5%;
+    }
+    #status{
+        min-height:24px;
+        padding: 5%;
+        color: #003087;
+    }
+    .grade-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        padding: 5%;
+    }
+    .card{
+        padding:20px;
+        border-radius:14px;
+    }
+    .card h3{
+        font-size:16px;
+        margin:0 0 12px;
+        color:#003087;
+    }
+    .nome-local{
+        padding-left: 5%;
+    }
+    .titulo-local{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .titulo-previsao-clima{
+        padding: 5%;
+    }
+    .dados-meteorologicos{
+        font-size: 0.8rem;
+        color: #B6AEAE;
+        padding: 5%;
+    }
+    .grade-dias{
+        grid-template-columns:repeat(auto-fit,minmax(80px,1fr));
+    }
+    .dia{
+        padding:10px;
+    }
+    .dia h3{
+        font-size:14px;
+    }
+    .dia .icone{
+        font-size:20px;
+    }
+    .dia p{
+        font-size:14px;
+    }
+    .dia .temp{
+        font-size:12px;
+        font-weight:700;
+    }
+
+    /* =================================================================== */
+    /* RESUMO NOTÍCIAS */
+    /* =================================================================== */
 }
 
+
+
+/* =================================================================== */
+/* RESPONSIVIDADE MOBILE */
+/* =================================================================== */
 @media (max-width:768px) {
     .titulo-secoes{
         padding: 5%;
     }
+
+    /* =================================================================== */
+    /* MENU + CABEÇALHO */
+    /* =================================================================== */
+    .menu-hamburguer {
+        display: flex;
+    }
+    .nav-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 250px; 
+        height: 100vh;
+        background-color: var(--cor-primaria-azul-fundo);
+        box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
+        padding-top: 80px;
+        transition: right 0.4s ease; 
+        z-index: 1000;
+    }
+    .nav-menu.ativo {
+        right: 0;
+    }
+    .lista {
+        flex-direction: column;
+        align-items: stretch; 
+        padding: 0 25px;
+        gap: 15px;
+    }
+    .btnhead {
+        display: block; 
+        width: 100%;
+        text-align: left;
+    }
+    .btn-login {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .menu-hamburguer.aberto .bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 6px);
+    }
+    .menu-hamburguer.aberto .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-hamburguer.aberto .bar:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* =================================================================== */
+    /* SEÇÃO DE HERO SECTION */
+    /* =================================================================== */
+    .hero-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    
+      .hero-right {
+        margin-right: 0;
+        width: 100%;
+      }
+    
+      .alert-card {
+        width: 100%;
+        max-width: 340px;
+      }
+
+    /* =================================================================== */
+    /* DIFERENCIAIS NIÑO E NIÑA */
+    /* =================================================================== */
+    .diferencas-nino-nina{
+        flex-direction: column !important;
+        max-width: 500px;
+        margin: 5%;
+    }
+    .el-nino{
+        background-color: #F6D1C5;
+        border: solid 1px #FF5722 ;
+        margin: 10px 5%;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .titulo-el{
+        background-color: #FF5722;
+        padding: 5%;
+        width: 100%;
+    }
+    .texto-diferenciais{
+        padding: 10px;
+    }
+    .la-nina{
+        background-color: #B0DAFF;
+        border: solid 1px #006ECE;
+        margin: 10px 5%;
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .titulo-la{
+        background-color: #0F4C81;
+        padding: 5%;;
+        width: 100%;
+    }
+
+    /* ================================================================================= */
+    /* CONTATOS DE EMERGÊNCIA */
+    /* ================================================================================= */
+
+
+    /* =================================================================== */
+    /* CONTEÚDOS DA PARTE DO "O QUE É" */
+    /* =================================================================== */
+    .titulo-secao-container{
+        padding: 5%;
+    }
+    .conteudo-o-que-e p{
+        font-size: 16px;
+        padding: 5%;
+    }
+    .img-o-que-e{
+        width: 200px;
+    }
+
+    /* =================================================================== */
+    /* CONTEÚDOS DA PARTE DO "O QUE É" + COMO FUNCIONA */
+    /* =================================================================== */
+    .informacoes-adicionais-o-que-e{
+        flex-direction: column !important;
+        max-width: 500px;
+        margin: 5%;
+    }
+    .como-funciona{
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    /* ========================================================================== */
+    /* PREVISÃO DA REGIÃO */
+    /* ========================================================================== */
+    .container{
+        padding:16px 12px
+    }.busca,.secao{
+        padding: 5%;
+    }
+    .busca button{
+        flex:1;
+        padding:11px 17px;
+        font-size: medium;
+    }
+    .grafico-wrapper{
+        height:280px
+    }
+    .titulo-local p{
+        padding: 5%;
+    }
+    #status{
+        min-height:24px;
+        padding: 5%;
+        color: #003087;
+    }
+    .grade-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+        padding: 5%;
+    }
+    .card{
+        padding:18px;
+        border-radius:14px;
+    }
+    .card h3{
+        font-size:16px;
+        margin:0 0 12px;
+        color:#003087;
+    }
+    .nome-local{
+        padding-left: 5%;
+    }
+    .titulo-local{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .titulo-previsao-clima{
+        padding: 5%;
+    }
+    .dados-meteorologicos{
+        font-size: 0.8rem;
+        color: #B6AEAE;
+        padding: 5%;
+    }
+
+    /* =================================================================== */
+    /* RESUMO NOTÍCIAS */
+    /* =================================================================== */
+    .resumo-noticias-topo{
+        margin: 0 5%;
+    }
+
 }
