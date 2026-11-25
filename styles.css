@@ -261,7 +261,7 @@
 /* =================================================================== */
 .hero-container{
     background-image: url("./imagens_usadas/heroomar.jpg");  
-    height: calc(30vh - 134px);
+    height: calc(100vh - 134px);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -571,7 +571,7 @@ a{
     /* SEÇÃO DE HERO SECTION */
     /* =================================================================== */
     .hero-container{
-        height: calc(40vh - 134px);
+        height: calc(60vh - 134px);
     }
     .hero-container h1{
         font-size: 100px;
