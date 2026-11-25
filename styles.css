@@ -74,7 +74,6 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    
     background-color: var(--cor-primaria-azul-fundo);
 }
 .container-cabecalho {
