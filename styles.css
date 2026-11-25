@@ -780,6 +780,9 @@ a{
     .titulo-secoes{
         padding: 5%;
     }
+    .container-secoes main{
+        width: 100%;
+    }
 
     /* =================================================================== */
     /* MENU + CABEÇALHO */
@@ -836,15 +839,16 @@ a{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
       }
       .hero-right {
-        margin-right: 0;
-        width: 100%;
+        display: none;
       }
-    
-      .alert-card {
-        width: 100%;
-        max-width: 340px;
+      .hero-left h1{
+        font-size: 40px;
+      }
+      .alert-title{
+        font-size: 18px;
       }
 
     /* =================================================================== */
@@ -975,7 +979,15 @@ a{
     /* RESUMO NOTÍCIAS */
     /* =================================================================== */
     .resumo-noticias-topo{
-        margin: 0 5%;
+        margin: 0 5% 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tag-regiao{
+        width: 150px;
+    }
+    .reportagem{
+        gap: 15px;
     }
 
 }
