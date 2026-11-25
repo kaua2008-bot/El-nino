@@ -35,32 +35,25 @@
     width: 100%;
     justify-content: center;
 }
-
 .container-secoes main{
     display: flex;
     width: 100%;
     max-width: 1200px;
-    
     flex-direction: column;
     justify-content: center;
 }
-
 .container-secao {
     display: flex;
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 50px;
 }
-
 .titulo-secoes{
     font-size: 24px;
 }
-
 .titulo-secao-container{
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
-
 .button-importante{
     margin: 0 10px 0 0;
     border: none;
@@ -142,6 +135,30 @@
     height: 3px;
     background-color: #fff;
     transition: all 0.3s ease;
+}
+
+/* =================================================================== */
+/* APOIO PARA BUSCA */
+/* =================================================================== */
+.apoio-busca{
+    margin: 30px 0 ;
+    background-color: #CEEFFB;
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+.apoio-busca img{
+    width: 40px;
+    padding-right: 5px;
+}
+.btn-apoio-busca{
+    background-color:#003087;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 14px;
+    cursor: pointer;
 }
 
 /* =================================================================== */
@@ -243,8 +260,8 @@
 /* HERO SECTION */
 /* =================================================================== */
 .hero-container{
-    background-image: url("/imagens_usadas/heroomar.jpg");  
-    height: calc(100vh - 134px);
+    background-image: url("./imagens_usadas/heroomar.jpg");  
+    height: calc(30vh - 134px);
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center;
@@ -268,6 +285,7 @@ h1{
     width: 217px;
     height: 58px;
     border-radius: 8px;
+    border: none;
     padding: 10px;
     gap: 5px;
     top: 4px;
@@ -391,7 +409,7 @@ h1{
 .grade-cards {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 14px;
+    gap: 0 14px;
 }
 .card{
     padding:15px;
@@ -413,22 +431,22 @@ h1{
 .valor{
     font-size:2.25rem;
     line-height:1.2;
-    font-weight:750
+    font-weight:750;
 }
 .menor{
-    font-size:1.65rem
+    font-size:1.65rem;
 }
 .card p{
     margin:10px 0 0;
-    font-size:.88rem
+    font-size:.88rem;
 }
 .secao h2{
     font-size:1.2rem;
-    margin:0 0 15px
+    margin:0 0 15px;
 }
 .lista-avisos{
     display:grid;
-    gap:10px
+    gap:10px;
 }
 
 .aviso{
@@ -514,6 +532,23 @@ a{
 }
 
 /* =================================================================== */
+/* SEÇÃO NOTÍCIAS DA REGIÃO */
+/* =================================================================== */
+.texto-noticias{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.btn-regiao-not{
+    background-color: #003087;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 14px;
+    cursor: pointer;
+    border: none;
+}
+
+/* =================================================================== */
 /* SEÇÃO DÚVIDAS E SUGESTÕES */
 /* =================================================================== */
 
@@ -530,6 +565,19 @@ a{
     /* =================================================================== */
     .container-cabecalho {
         max-width: 800px;
+    }
+
+    /* =================================================================== */
+    /* SEÇÃO DE HERO SECTION */
+    /* =================================================================== */
+    .hero-container{
+        height: calc(40vh - 134px);
+    }
+    .hero-container h1{
+        font-size: 100px;
+    }
+    .paragrafo_1{
+        font-size: 20px;
     }
 
     /* =================================================================== */
@@ -686,6 +734,28 @@ a{
     }
     .menu-hamburguer.aberto .bar:nth-child(3) {
         transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    /* =================================================================== */
+    /* SEÇÃO DE HERO SECTION */
+    /* =================================================================== */
+    .hero-container{
+        height: calc(40vh - 134px);
+    }
+    .hero-container h1{
+        font-size: 100px;
+    }
+    .paragrafo_1{
+        font-size: 14px;
+    }
+    .hero_button{
+        width: 150px;
+        height: 25px;
+        font-size: 16px;
+    }
+    .hero_button img{
+        width: 20px;
+        height: 20px;
     }
 
     /* =================================================================== */
