@@ -30,7 +30,7 @@
             <nav class="nav-menu" id="navMenu">
                 <ul class="lista">
                     <li><a href="./index.html" class="btnhead btn-menu">Início</a></li>
-                    <li><a href="#previsao" class="btnhead btn-menu">Previsão</a></li>
+                    <li><a href="#form-busca" class="btnhead btn-menu">Previsão</a></li>
                     <li><a href="#" class="btnhead btn-menu">Contato</a></li>
                 </ul>
     
@@ -45,58 +45,45 @@
   <section class="hero-section">
     <div class="hero-container">
       
-      <!-- Lado Esquerdo: Título, Descrição e Botão -->
-      <div class="hero-left">
-        <h1 class="hero-title">
-          <span class="text-white">S.O.S</span> <span class="text-orange">EL NIÑO</span>
-        </h1>
-        <p class="hero-subtitle">
-          Informação e preparo para<br>
-          enfrentar os impactos do<br>
-          fenômeno.
-        </p>
-        <a href="#consultar" class="btn-consultar">
-          <span>Consultar</span>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <line x1="5" y1="12" x2="19" y2="12"></line>
-            <polyline points="12 5 19 12 12 19"></polyline>
-          </svg>
-        </a>
-      </div>
+        <!-- Lado Esquerdo: Título, Descrição e Botão -->
+        <div class="hero-left">
+            <h1 class="hero-title"><span class="text-white">S.O.S</span> <span class="text-orange">EL NIÑO</span></h1>
 
-      <!-- Lado Direito: Card de Alerta de Emergência -->
-      <div class="hero-right">
-        <div class="alert-card">
-          <!-- Ícone de Triângulo de Alerta -->
-          <div class="alert-icon">
-            <svg width="36" height="36" viewBox="0 0 24 24" fill="#FFFFFF">
-              <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
-              <line x1="12" y1="9" x2="12" y2="13" stroke="#E53935" stroke-width="2.2" stroke-linecap="round"/>
-              <circle cx="12" cy="17" r="1.2" fill="#E53935"/>
+            <p class="hero-subtitle">Informação e preparo para<br>enfrentar os impactos do<br>fenômeno.</p>
+            <a href="#form-busca" class="btn-consultar">
+            <span href="#form-busca">Consultar</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
             </svg>
-          </div>
-          
-          <h2 class="alert-title">
-            ALERTA DE<br>
-            EMERGÊNCIA
-          </h2>
-          
-          <p class="alert-text">
-            Chuvas intensas previstas para<br>
-            as próximas 24H em<br>
-            regiões do sul.
-          </p>
-          
-          <a href="#detalhes" class="btn-detalhes">
-            <span>Ver Detalhes</span>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
-          </a>
+            </a>
         </div>
-      </div>
 
+        <!-- Lado Direito: Card de Alerta de Emergência -->
+        <div class="hero-right">
+            <div class="alert-card">
+            <!-- Ícone de Triângulo de Alerta -->
+            <div class="alert-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="#FFFFFF">
+                <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13" stroke="#E53935" stroke-width="2.2" stroke-linecap="round"/>
+                <circle cx="12" cy="17" r="1.2" fill="#E53935"/>
+                </svg>
+            </div>
+            
+            <h2 class="alert-title">ALERTA DE<br>EMERGÊNCIA</h2>
+            
+            <p class="alert-text">Chuvas intensas previstas para<br>as próximas 24H em<br>regiões do sul.</p>
+            
+            <a href="#titulo-avisos" class="btn-detalhes">
+                <span>Ver Detalhes</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+            </div>
+        </div>
     </div>
   </section>
 
@@ -309,6 +296,27 @@
 
                     <div class="dados-meteorologicos">Dados meteorológicos: <a href="https://open-meteo.com/" target="_blank" rel="noopener noreferrer">Open-Meteo</a> · Geocodificação: <a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>/Nominatim. Previsões são estimativas por coordenadas, não medições em cada rua.</div>
                 </section>
+            </section>
+
+            <!-- SEÇÃO DE DOCUMENTOS DE AUXILIO  -->
+            <section>
+
+                <div class="conteudo-aviso">
+                    <div class="el-nino">
+                        <div class="texto-diferenciais">
+                            <h3><img src="./imagens_usadas/casaSecaHome.png" style="width: 30px;">Guia de prevenção para secas</h3>
+                            <p>Economizar água e se preprarar</p>
+                            <p class="ver-guia-s">Ver guia </p>
+                        </div>
+                    </div>
+                    <div class="la-nina">
+                        <div class="texto-diferenciais">
+                            <h3><img src="./imagens_usadas/casaEnxenteHome.png" style="width: 30px;" >Guia de prevenção para enchentes</h3>
+                            <p>Saiba como se proteger</p>
+                            <p class="ver-guia-e">Ver guia </p>
+                        </div>
+                    </div>
+                </div>
             </section>
     
             <!-- SEÇÃO NOTÍCIAS DA REGIÃO -->

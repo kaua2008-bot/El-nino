@@ -203,9 +203,30 @@
     color: white;
 }
 
-/* ================================================================================= */
+
+/* =================================================================== */
+/* CONTEÚDOS DE AVISO */
+/* =================================================================== */
+.conteudo-aviso{
+    display: flex;
+    justify-content: space-around;
+}
+.ver-guia-s{
+    background-color: #FF5722;
+    padding: 5px 0;
+    color: white;
+    border-radius: 20px;
+}
+.ver-guia-e{
+    background-color: #003087;
+    padding: 5px 0;
+    color: white;
+    border-radius: 20px;
+}
+
+/* =================================================================== */
 /* CONTATOS DE EMERGÊNCIA */
-/* ================================================================================= */
+/* =================================================================== */
 .emergencia {
     width: 100%;
     min-height: 590px;
@@ -263,7 +284,7 @@
     width: 100%;
     min-height: 360px;
     /* Substitua 'fundo-mar.jpg' pelo caminho correto da sua imagem */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.18)), url('/imagens_usadas/heroomar.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.18)), url('./imagens_usadas/heroomar.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -780,6 +801,9 @@ a{
     .titulo-secoes{
         padding: 5%;
     }
+    .container-secoes main{
+        width: 100%;
+    }
 
     /* =================================================================== */
     /* MENU + CABEÇALHO */
@@ -833,18 +857,19 @@ a{
     /* SEÇÃO DE HERO SECTION */
     /* =================================================================== */
     .hero-container {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
       }
-    
       .hero-right {
-        margin-right: 0;
-        width: 100%;
+        display: none;
       }
-    
-      .alert-card {
-        width: 100%;
-        max-width: 340px;
+      .hero-left h1{
+        font-size: 40px;
+      }
+      .alert-title{
+        font-size: 18px;
       }
 
     /* =================================================================== */
@@ -975,7 +1000,15 @@ a{
     /* RESUMO NOTÍCIAS */
     /* =================================================================== */
     .resumo-noticias-topo{
-        margin: 0 5%;
+        margin: 0 5% 15%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tag-regiao{
+        width: 150px;
+    }
+    .reportagem{
+        gap: 15px;
     }
 
 
