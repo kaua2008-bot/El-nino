@@ -1041,4 +1041,205 @@ a{
         gap: 15px;
     }
 
+
 }
+
+    /* =================================================================== */
+    /* RODAPÉ */
+    /* =================================================================== */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      }
+      
+      .footer-sos {
+        background-color: #10497E; /* Azul exato da captura de tela */
+        color: #FFFFFF;
+        padding: 20px 32px 24px 32px;
+        width: 100%;
+      }
+      
+      .footer-container {
+        max-width: 1380px;
+        margin: 0 auto;
+      }
+      
+      /* --- PARTE SUPERIOR --- */
+      .footer-top {
+        display: flex;
+        align-items: stretch;
+        justify-content: flex-start;
+        margin-bottom: 18px;
+      }
+      
+      /* Coluna 1: Marca */
+      .brand-col {
+        flex: 0 0 28%;
+        padding-right: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 4px;
+      }
+      
+      .brand-header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+      
+      .brand-logo {
+        width: 101.93px;
+        height: 101.93px;
+        object-fit: contain;
+        /* Remove o fundo preto da imagem JPG e deixa apenas os traços brancos sobre o azul */
+        mix-blend-mode: lighten;
+        border-radius: 50%;
+      }
+      
+      .brand-title {
+        display: flex;
+        flex-direction: column;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.2px;
+      }
+      
+      .brand-slogan {
+        font-size: 16.5px;
+        font-weight: 400;
+        color: #F0F4F8;
+        letter-spacing: 0.1px;
+      }
+      
+      /* Coluna 2: Links Úteis (com borda esquerda) */
+      .links-col {
+        flex: 0 0 46%;
+        border-left: 1.5px solid rgba(255, 255, 255, 0.65);
+        padding: 6px 28px 6px 32px;
+      }
+      
+      /* Coluna 3: Suporte (com borda esquerda) */
+      .support-col {
+        flex: 1;
+        border-left: 1.5px solid rgba(255, 255, 255, 0.65);
+        padding: 4px 20px 4px 32px;
+      }
+      
+      /* Títulos das Colunas */
+      .footer-col h3 {
+        font-size: 16.5px;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+      }
+      
+      /* Listas e Marcadores */
+      .footer-col ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+      
+      .footer-col ul li {
+        margin-bottom: 4px;
+        font-size: 16px;
+        line-height: 1.3;
+        color: #F0F4F8;
+      }
+      
+      .footer-col ul li::marker {
+        color: #FFFFFF;
+        font-size: 0.85em;
+      }
+      
+      .footer-col ul li a {
+        color: #F0F4F8;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+      }
+      
+      .footer-col ul li a:hover {
+        text-decoration: underline;
+        opacity: 0.85;
+      }
+      
+      /* --- PARTE INFERIOR --- */
+      .footer-bottom {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 24px;
+        font-size: 16px;
+        color: #F0F4F8;
+        padding-top: 2px;
+      }
+      
+      .bottom-divider {
+        display: inline-block;
+        width: 1.5px;
+        height: 20px;
+        background-color: rgba(255, 255, 255, 0.75);
+      }
+      
+      .sources {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      
+      .sources a {
+        color: #F0F4F8;
+        text-decoration: none;
+      }
+      
+      .sources a:hover {
+        text-decoration: underline;
+      }
+      
+      .sources .pipe {
+        color: rgba(255, 255, 255, 0.75);
+        font-weight: 300;
+      }
+      
+      /* --- RESPONSIVIDADE (Celulares e Tablets) --- */
+      @media (max-width: 960px) {
+        .footer-top {
+          flex-direction: column;
+          gap: 24px;
+        }
+      
+        .brand-col,
+        .links-col,
+        .support-col {
+          flex: 1 1 100%;
+          border-left: none;
+          padding: 0;
+        }
+      
+        .links-col,
+        .support-col {
+          border-top: 1px solid rgba(255, 255, 255, 0.35);
+          padding-top: 18px;
+        }
+      
+        .footer-bottom {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+          border-top: 1px solid rgba(255, 255, 255, 0.35);
+          padding-top: 16px;
+        }
+      
+        .bottom-divider {
+          display: none;
+        }
+      }
+      
