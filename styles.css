@@ -665,7 +665,37 @@ a{
 /* =================================================================== */
 /* SEÇÃO DÚVIDAS E SUGESTÕES */
 /* =================================================================== */
-
+.container-duvidas{
+    background-color: #CEEFFB;
+    max-width: 1600px;
+    height: 81px;
+    display: flex;
+}
+.imgInterrogacao{
+    width: 46px;
+    object-fit: contain;
+}
+.textoDuvidas{
+    align-items: right;
+    display: flex;
+    justify-content: space-between;
+}
+.tituloDuvidas{
+    font-size: 24px;
+    font-style: bold;
+    width: 260px;
+}
+.conteudoDuvidas{
+    font-size: 20px;
+}
+.btnDuvidas{
+    background-color: #0F4C81;
+    color: #ffffff;
+    border-style: none;
+    width: 154px;
+    height: 42px;
+    border-radius: 25px;
+}
 
 /* =================================================================== */
 /* RESPONSIVIDADE NOTEBOOK */
